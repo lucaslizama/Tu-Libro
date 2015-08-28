@@ -71,6 +71,7 @@
     </Compile>
     <Compile Include="PaginaMaestra.Master.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="PaginaMaestra.Master.designer.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
@@ -86,6 +87,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PaginaMaestra.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BibliotecaTuLibro\BibliotecaTuLibro.csproj">
+      <Project>{E76A82E4-22EC-4257-8C7D-3B87900B7A7C}</Project>
+      <Name>BibliotecaTuLibro</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
