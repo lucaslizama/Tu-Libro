@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <title>Registro</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
         </center>
         <br />
         <center>                        
-           <asp:Table runat="server" BorderColor="Black" BorderWidth="3" Width="800px">
+           <asp:Table ID="Table1" runat="server" BorderColor="Black" BorderWidth="3" Width="800px">
                 <asp:TableRow>
                      <asp:TableCell>
                         <asp:Label ID="LblNombreUsuario" Text="Ingrese Su Nombre" runat="server" />
@@ -88,9 +88,43 @@
                         <asp:RegularExpressionValidator runat="server" ID="RevPassword" 
                         ForeColor="Red" ErrorMessage=" * Su Password es muy debil "
                         ControlToValidate="TxtPassword"
-                        ValidationExpression="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/;" Display="Dynamic" />
+                        ValidationExpression="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$;" Display="Dynamic" />
                     </asp:TableCell>                
                 </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell>
+                        <asp:Label ID="LblPassword2" Text="Reingrese su Passwors" runat="server" />
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="TxtPassword2" runat="server" TextMode="Password" />
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:RequiredFieldValidator runat="server" ID="RvfPassword2"
+                        ForeColor="Red" ControlToValidate="TxtPassword2" Display="Dynamic" />
+                        <asp:CompareValidator runat="server" ID="CvPassword2" ForeColor="Red"
+                        ControlToCompare="TxtPassword" ControlToValidate="TxtPassword2"
+                        ErrorMessage=" * Las Passwors no conciden , Reintente" Display="Dynamic" />
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>   
+                    <asp:TableCell>                    
+                    </asp:TableCell>                             
+                <asp:TableCell>
+                    <center>
+                        <b>Al crear una cuenta en www.tulibro.cl, usted acepta las Condiciones 
+                        generales de uso, la Declaración de protección de datos y la Política de cookies y publicidad 
+                        en Internet de TuLibro.</b>
+                    </center>
+                    </asp:TableCell>                            
+            </asp:TableRow>
+            <asp:TableRow>
+                <asp:TableCell>
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:Button ID="BtnValidar" runat="server" OnClick="BtnValidar_Click"
+                    Text="Registrarse" />
+                </asp:TableCell>
+            </asp:TableRow>
            </asp:Table>
         </center>    
     </div>
