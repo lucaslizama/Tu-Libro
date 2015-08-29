@@ -51,7 +51,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Inicio.aspx" />
+    <Content Include="InicioDeSession.aspx" />
     <Content Include="recursos\css\estilo.css" />
     <Content Include="recursos\imagenes\banner.png" />
     <Content Include="recursos\imagenes\banner_transparente.png" />
@@ -67,12 +67,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Inicio.aspx.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
+    <Compile Include="InicioDeSession.aspx.cs">
+      <DependentUpon>InicioDeSession.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Inicio.aspx.designer.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
+    <Compile Include="InicioDeSession.aspx.designer.cs">
+      <DependentUpon>InicioDeSession.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaMaestra.Master.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>

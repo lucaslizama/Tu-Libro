@@ -89,8 +89,43 @@
                         ForeColor="Red" ErrorMessage=" * Su Password es muy debil "
                         ControlToValidate="TxtPassword"
                         ValidationExpression="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/;" Display="Dynamic" />
-                    </asp:TableCell>                
+                    </asp:TableCell>                                   
                 </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell>
+                        <asp:Label ID="LblPassword2" Text="Reingrese Password" runat="server" />
+                    </asp:TableCell>                    
+                    <asp:TableCell>
+                        <asp:TextBox ID="TxtPassword2" runat="server" TextMode="Password"/>
+                    </asp:TableCell>                        
+                    <asp:TableCell>
+                        <asp:RequiredFieldValidator runat="server" ID="RfvPAssword2"
+                        ForeColor="Red" ErrorMessage=" * Debe Ingresar una contraseña"
+                        ControlToValidate="TxtPassword2" Display="Dynamic" />
+                        <asp:CompareValidator runat="server" ID="CvPassword2"
+                        ForeColor="Red" ControlToCompare="TxtPassword" ControlToValidate="TxtPassword2"
+                        ErrorMessage=" * Lo Ingresado no concide con la Password, reingrese" Display="Dynamic"/>
+                    </asp:TableCell>                           
+                </asp:TableRow>
+                <asp:TableRow>
+                <asp:TableCell>                    
+                </asp:TableCell>                
+                <asp:TableCell>
+                    <asp:Label ID="lblTerminos" runat="server" Text="Al crear una cuenta, usted acepta las Condiciones 
+                    generales de uso, la Declaración de protección de datos y la Política de cookies y publicidad 
+                    en Internet de TuLibro."></asp:Label>
+                    </asp:TableCell>                            
+            </asp:TableRow>
+            <asp:TableRow>
+                <asp:TableCell>
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:Button ID="BtnIngresar" runat="server" OnClick="BtnIngresar_Click"
+                    Text="Registrarse" />
+                </asp:TableCell>
+                <asp:TableCell>
+                </asp:TableCell>
+            </asp:TableRow>
            </asp:Table>
         </center>    
     </div>
