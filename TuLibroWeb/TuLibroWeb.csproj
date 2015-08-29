@@ -52,6 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Inicio.aspx" />
+    <Content Include="recursos\css\estilo.css" />
+    <Content Include="recursos\imagenes\banner.png" />
+    <Content Include="recursos\imagenes\banner_transparente.png" />
+    <Content Include="recursos\imagenes\carro_gris.png" />
+    <Content Include="recursos\imagenes\carro_negro.png" />
     <Content Include="Registro.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -94,6 +99,7 @@
       <Name>BibliotecaTuLibro</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>

@@ -4,17 +4,49 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
+        <title>Titulo Generico</title>
     </asp:ContentPlaceHolder>
+    <link rel="Stylesheet" type="text/css" href="recursos/css/estilo.css" />
+    <style type="text/css">
+        #barraIzquierda
+        {
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+        <div id="contenedorBanner">
+            <img id="banner" src="recursos/imagenes/banner_transparente.png" alt="Banner de la pagina"/>
+            <asp:ContentPlaceHolder ID="botonesBanner" runat="server">
+                <asp:Button ID="btnInicioSesion" class="bannerButton" runat="server" Text="Iniciar Sesión" />
+                <asp:Button ID="btnSuCuenta" class="bannerButton" runat="server" Text="Su Cuenta" />
+            </asp:ContentPlaceHolder>
+        </div>
     </div>
-    </form>
+    <center>
+        <asp:Table ID="cuerpoGeneral" runat="server" style="margin-left: 0px">
+            <asp:TableRow>
+                <asp:TableCell ID="barraIzquierda" Width="125px">
+                    <asp:ContentPlaceHolder ID="contenidoBarraIzquierda" runat="server">
+                    </asp:ContentPlaceHolder>
+                </asp:TableCell>
+                <asp:TableCell ID="centroPagina" Width="600px">
+                    <asp:ContentPlaceHolder ID="contenidoCentro" runat="server">
+                        <p>Contenido de la pagina.<br />
+                           Poner aqui el cuerpo de la pagina
+                           sea cual sea. 
+                        </p>
+                    </asp:ContentPlaceHolder>
+                </asp:TableCell>
+                <asp:TableCell ID="barraDerecha" Width="125px">
+                    <asp:ContentPlaceHolder ID="contenidoBarraDerecha" runat="server">
+                    </asp:ContentPlaceHolder>
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
+    </center>
 </body>
 </html>
