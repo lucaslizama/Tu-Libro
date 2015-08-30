@@ -12,76 +12,69 @@
 <body>
     <center>
         <form id="form1" runat="server">
-            <div>
-                <div id="contenedorBanner">
-                    <img id="banner" src="recursos/imagenes/banner_transparente.png" alt="Banner de la pagina"/>
+            <div id="header">
+                <span id="contenedorBanner">
+                    <img id="banner" src="recursos/imagenes/banner_transparente.png" alt="Banner de la pagina" onclick="return banner_onclick()" />
+                </span>
+                <span id ="contenedorBotonesBanner">
                     <asp:ContentPlaceHolder ID="botonesBanner" runat="server">
                         <asp:Button ID="btnInicioSesion" class="bannerButton" runat="server" 
-                            Text="Iniciar Sesión" Onclick="btnInicioSesion_Click" />
+                            Text="Iniciar Sesión" />
                         <asp:Button ID="btnSuCuenta" class="bannerButton" runat="server" Text="Su Cuenta" />
                         <asp:Button ID="btnCarrito" class="bannerButton" runat="server" Text="Carrito" Visible="false"/>
                     </asp:ContentPlaceHolder>
-                </div>
+                </span>
             </div>
-            <center>
-                <asp:Table ID="cuerpoGeneral" runat="server" style="margin-left: 0px">
-                    <asp:TableRow>
-                        <asp:TableCell ID="barraIzquierda" Width="125px">
-                            <asp:ContentPlaceHolder ID="contenidoBarraIzquierda" runat="server">
-                            </asp:ContentPlaceHolder>
-                        </asp:TableCell>
-                        <asp:TableCell ID="centroPagina" Width="600px">
-                            <center>
-                                <asp:ContentPlaceHolder ID="contenidoCentro" runat="server">
-                                    <h1>Pagina Principal</h1>
-                                    <p>Contenido de la pagina.<br />
-                                       Poner aqui el cuerpo de la pagina
-                                       sea cual sea. 
-                                    </p>
-                                </asp:ContentPlaceHolder>
-                            </center>
-                        </asp:TableCell>
-                        <asp:TableCell ID="barraDerecha" Width="125px">
-                            <asp:ContentPlaceHolder ID="contenidoBarraDerecha" runat="server">
-                            </asp:ContentPlaceHolder>
-                        </asp:TableCell>
-                    </asp:TableRow>
-                </asp:Table>
-            </center>
-            <div>
-                <asp:Table runat="server" BorderWidth="3" BorderColor="Black" Width="800px">
-                    <asp:TableRow>
-                        <asp:TableCell ColumnSpan="5" Height="60px">
-                            <asp:ContentPlaceHolder ID="Mas_Vendidos" runat="server">
-                                <h1>Libros Mas Vendidos</h1>
-                                <br />
-                                <p>Aqui podriamos colocar onda 3 imagenes de libros.<br />
-                                       onda libros caros  
-                                    </p>
-                            </asp:ContentPlaceHolder>
-                        </asp:TableCell>                        
-                    </asp:TableRow>
-                    <asp:TableRow>
+            <div id="cuerpo">
+                <span id="barraIzquierda" >
+                    <asp:ContentPlaceHolder ID="contenidoBarraIzquierda" runat="server">
+                        asdasdsasdasd
+                    </asp:ContentPlaceHolder>
+                </span>
+                <span id="centro">
+                    <asp:ContentPlaceHolder ID="contenidoCentro" runat="server">
+                        <h1>Pagina Principal</h1>
+                        <p>Contenido de la pagina.<br />
+                            Poner aqui el cuerpo de la pagina
+                            sea cual sea. 
+                        </p>
+                    </asp:ContentPlaceHolder>
+                </span>
+                <span id="barraDerecha">
+                    <asp:ContentPlaceHolder ID="contenidoBarraDerecha" runat="server">
+                    </asp:ContentPlaceHolder>
+                </span>
+            </div>
+            <asp:Table runat="server" BorderWidth="3" BorderColor="Black" Width="800px">
+                <asp:TableRow>
+                    <asp:TableCell ColumnSpan="5" Height="60px">
+                        <asp:ContentPlaceHolder ID="Mas_Vendidos" runat="server">
+                            <h1>Libros Mas Vendidos</h1>
+                            <br />
+                            <p>Aqui podriamos colocar onda 3 imagenes de libros.<br />
+                                    onda libros caros  
+                                </p>
+                        </asp:ContentPlaceHolder>
+                    </asp:TableCell>                        
+                </asp:TableRow>
+                <asp:TableRow>
                         
-                    </asp:TableRow>
-                </asp:Table>                
-            </div>
-            <div>
-                <asp:Table ID="Table1" runat="server" BorderWidth="3" BorderColor="Black" Width="800px">
-                    <asp:TableRow>
-                        <asp:TableCell ColumnSpan="5" Height="60px">
-                            <asp:ContentPlaceHolder ID="Recomendados" runat="server">
-                                <h1>Libros Recomendados</h1>
-                                <br />
-                                <p>Aqui libros recomendados con imagenes igual </p>
-                            </asp:ContentPlaceHolder>
-                        </asp:TableCell>                        
-                    </asp:TableRow>
-                    <asp:TableRow>
+                </asp:TableRow>
+            </asp:Table>                
+            <asp:Table ID="Table1" runat="server" BorderWidth="3" BorderColor="Black" Width="800px">
+                <asp:TableRow>
+                    <asp:TableCell ColumnSpan="5" Height="60px">
+                        <asp:ContentPlaceHolder ID="Recomendados" runat="server">
+                            <h1>Libros Recomendados</h1>
+                            <br />
+                            <p>Aqui libros recomendados con imagenes igual </p>
+                        </asp:ContentPlaceHolder>
+                    </asp:TableCell>                        
+                </asp:TableRow>
+                <asp:TableRow>
                         
-                    </asp:TableRow>
-                </asp:Table>                
-            </div>
+                </asp:TableRow>
+            </asp:Table>                
         </form>
     </center>
 </body>
