@@ -1,36 +1,60 @@
-﻿#banner{
-    margin-bottom : 10px;
-    margin-top : 10px;
+﻿body 
+{
+    background-color : #DCE5E8;
+    margin-top : 0px;
+}
+
+#banner{
+    float :left;
+    margin : 10px; 
 }
 
 #contenedorBotonesBanner 
 {
-    margin-left : 200px;
-    margin-bottom: 30px;
+    float : right;
+    margin : 10px;
 }
 
 #header 
 {
+    width : 1000px;
+    margin : 0 auto;
+    background-color : White;
+}
+
+#cuerpo 
+{
+    width : 1000px;
+    margin : 0 auto;
+    background-color : White;
 }
 
 #barraIzquierda 
 {
-    position : relative;
-    bottom : 20;
-    left : 5;
+    float : left;
+    width : 140px;
+    margin : 5px;
 }
 
 #centro 
 {
-    width : 200px;
+    float : left;
+    width : 690px;
+    margin : 5px;
 }
+
+#barraDerecha 
+{
+    float : left;
+    width : 140px;
+    margin : 5px;
+}
+
 
 .bannerButton 
 {
     border-spacing : 10px;
-    margin-left : 5px;
-    margin-right : 10px;
-    margin-bottom : 10px;
+    margin : 5px;
     width : 125px;
     height : 30px;
     text-align : center;
