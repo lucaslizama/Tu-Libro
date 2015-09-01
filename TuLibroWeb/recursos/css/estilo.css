@@ -1,31 +1,44 @@
 ﻿body 
 {
-    background-color : #DCE5E8;
     margin-top : 0px;
+    background-color : #7ADEFF;
 }
 
 #banner{
     float :left;
-    margin : 10px; 
+    margin : 10px;
 }
 
-#contenedorBotonesBanner 
+#botonesBanner 
 {
     float : right;
-    margin : 10px;
+    margin : 5px;
+}
+
+.bannerButton 
+{
+    margin : 5px;
+    width : 125px;
+    height : 30px;
+    text-align : center;
 }
 
 #header 
 {
     width : 1000px;
     margin : 0 auto;
+    border-width : 2px;
+    border-style :solid;
+    border-color : Black;
     background-color : White;
+    overflow : auto;
 }
 
 #cuerpo 
 {
     width : 1000px;
     margin : 0 auto;
+    overflow : auto;
     background-color : White;
 }
 
@@ -50,13 +63,11 @@
     margin : 5px;
 }
 
-
-.bannerButton 
+#contenedor-buscador
 {
-    border-spacing : 10px;
-    margin : 5px;
-    width : 125px;
-    height : 30px;
-    text-align : center;
+    border-radius : 5px;
 }
+
+
+
 

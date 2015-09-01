@@ -5,22 +5,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <asp:ContentPlaceHolder ID="head" runat="server">
-        <title>Titulo Generico</title>
     </asp:ContentPlaceHolder>
     <link rel="Stylesheet" type="text/css" href="recursos/css/estilo.css" />
 </head>
 <body>
     <form id="form1" runat="server">
+        
         <div id="header">
-            <span id="contenedorBanner">
-                <img id="banner" src="recursos/imagenes/banner_transparente.png" alt="Banner de la pagina"/>
-            </span>
-            <span id ="contenedorBotonesBanner">
-                <asp:ContentPlaceHolder ID="botonesBanner" runat="server">
-                    <asp:Button ID="btnInicioSesion" class="bannerButton" runat="server" Text="Iniciar Sesión" />
-                    <asp:Button ID="btnSuCuenta" class="bannerButton" runat="server" Text="Su Cuenta" />
-                    <asp:Button ID="btnCarrito" class="bannerButton" runat="server" Text="Carrito" Visible="false"/>
-                </asp:ContentPlaceHolder>
+            <img id="banner" src="recursos/imagenes/banner_transparente.png" alt="Banner de la pagina"/>
+            <span id ="botonesBanner">
+                <asp:Button ID="btnInicioSesion" class="bannerButton" runat="server" Text="Iniciar Sesión" />
+                <asp:Button ID="btnSuCuenta" class="bannerButton" runat="server" Text="Su Cuenta" />
+                <asp:Button ID="btnCarrito" class="bannerButton" runat="server" Text="Carrito" Visible="false"/>
             </span>
         </div>
         <div id="cuerpo">
