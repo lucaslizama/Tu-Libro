@@ -117,8 +117,7 @@
           <AutoAssignPort>False</AutoAssignPort>
           <DevelopmentServerPort>7777</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost/TuLibroWeb</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

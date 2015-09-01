@@ -68,6 +68,34 @@
     border-radius : 5px;
 }
 
+.search-button 
+{
+    border-radius : 10px;
+}
+
+.bannerButton 
+{
+    border-radius : 10px;
+}
+
+#librosRecomendados
+{
+    width : 690px;
+    height : 100%;
+    overflow : auto;
+    margin-top : 5px;
+}
+
+.libro-recomendado 
+{
+    width : 340px;
+    height : 195px;
+    margin : 1px;
+    float : left;
+    border-width : 1px;
+    border-style :solid;
+    border-color : Black;
+}
 
 
 

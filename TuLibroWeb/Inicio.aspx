@@ -15,8 +15,22 @@
             <asp:ListItem>ISBN</asp:ListItem>
             <asp:ListItem>Editorial</asp:ListItem>
         </asp:DropDownList>
-        <asp:TextBox ID="txtBuscador" runat="server" Width="347px" />
-        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" Width="109px" />
+        <asp:TextBox ID="txtBuscador" runat="server" Width="350px"/>
+        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" Width="100px" class="search-button"/>
+        <div id="librosRecomendados">
+            <div class="libro-recomendado">
+                
+            </div>
+            <div class="libro-recomendado">
+                
+            </div>
+            <div class="libro-recomendado">
+                
+            </div>
+            <div class="libro-recomendado">
+                
+            </div>
+        </div>
     </fieldset>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="contenidoBarraDerecha" runat="server">
