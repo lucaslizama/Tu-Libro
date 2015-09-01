@@ -7,10 +7,12 @@ using System.Web.UI.WebControls;
 
 namespace TuLibroWeb
 {
-    public partial class Registro : System.Web.UI.Page
+    public partial class Registro2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+            
 
         }
     }
