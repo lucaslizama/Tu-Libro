@@ -5,15 +5,11 @@ using System.Text;
 
 namespace BibliotecaTuLibro
 {
-    public class Producto
+    public abstract class Producto
     {
         #region Campos de Objeto
 
-        protected string _nombreProducto;
-        protected string _fechaPublicacion;
-        protected string _isbn;
-        protected string _nombreAutor;
-        protected string _editorial;
+        protected string _nombre;
         protected double _valor;
         protected string _descripcion;
 
@@ -23,42 +19,10 @@ namespace BibliotecaTuLibro
         /// <summary>
         /// Obtiene o establece el Nombre del Producto.
         /// </summary>
-        public string NombreProducto
+        public string Nombre
         {
-            get {return _nombreProducto ;}
-            set { _nombreProducto = value; }
-        }
-        /// <summary>
-        /// Obtiene o establece la Fecha de Elaboracion del Producto.
-        /// </summary>
-        public string FechaPublicacion
-        {
-            get { return _fechaPublicacion; }
-            set { _fechaPublicacion = value; }
-        }
-        /// <summary>
-        /// Obtiene o establece el ISBN del Producto.
-        /// </summary>
-        public string Isbn
-        {
-            get { return _isbn; }
-            set { _isbn = value; }
-        }
-        /// <summary>
-        /// Obtiene o establece el Nombre del Autor del Producto.
-        /// </summary>
-        public string NombreAutor
-        {
-            get { return _nombreAutor; }
-            set { _nombreAutor = value; }
-        }
-        /// <summary>
-        /// Obtiene o establece la Editorial del Autor del Producto.
-        /// </summary>
-        public string Editorial
-        {
-            get { return _editorial; }
-            set { _editorial = value; }
+            get { return _nombre; }
+            set { _nombre = value; }
         }
         /// <summary>
         /// Obtiene o establece el Valor o Precio del Producto.
@@ -92,21 +56,12 @@ namespace BibliotecaTuLibro
         /// Constructor con parametros que establece los valores de Producto
         /// de acuerdo a los parametros recibidos.
         /// </summary>
-        /// <param name="nombreProducto"></param>
-        /// <param name="fechaPublicacion"></param>
-        /// <param name="isbn"></param>
-        /// <param name="nombreAutor"></param>
-        /// <param name="editorial"></param>
-        /// <param name="valor"></param>
-        /// <param name="descripcion"></param>
-        public Producto(string nombreProducto,string fechaPublicacion,string isbn,
-            string nombreAutor,string editorial,double valor,string descripcion)
+        /// <param name="nombre">Establece el nombre del Producto</param>
+        /// <param name="valor">Establece el valor del Producto</param>
+        /// <param name="descripcion">Establece la descripcion del Producto</param>
+        public Producto(string nombre, double valor, string descripcion)
         {
-            this._nombreProducto = nombreProducto;
-            this._fechaPublicacion = fechaPublicacion;
-            this._isbn = isbn;
-            this._nombreAutor = nombreAutor;
-            this._editorial = editorial;
+            this._nombre = nombre;
             this._valor = valor;
             this._descripcion = descripcion;
         }
@@ -119,11 +74,7 @@ namespace BibliotecaTuLibro
         /// </summary>
         private void Init()
         {
-            _nombreProducto = string.Empty;
-            _fechaPublicacion = string.Empty;
-            _isbn = string.Empty;
-            _nombreAutor = string.Empty;
-            _editorial = string.Empty;
+            _nombre = string.Empty;
             _descripcion = string.Empty;
             _valor = 0;
         }
@@ -134,13 +85,9 @@ namespace BibliotecaTuLibro
         public virtual string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(string.Format("Nombre del Producto: {0}", _nombreProducto));
-            sb.AppendLine(string.Format("Fecha de Publicacion: {0}", _fechaPublicacion));
-            sb.AppendLine(string.Format("ISBN: {0}", _isbn));
-            sb.AppendLine(string.Format("Nombre del Autor: {0}", _nombreAutor));
-            sb.AppendLine(string.Format("Editorial : {0}", _editorial));
+            sb.AppendLine(string.Format("Nombre del Producto: {0}", _nombre));
             sb.AppendLine(string.Format("Valor : {0}", _valor));
-            sb.AppendLine(string.Format("Descripcion : {0}",_descripcion));
+            sb.AppendLine(string.Format("Descripcion : {0}", _descripcion));
 
             return sb.ToString();
         }

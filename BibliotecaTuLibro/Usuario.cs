@@ -8,85 +8,67 @@ namespace BibliotecaTuLibro
     public class Usuario
     {
         #region Campos de Objeto
-        private string nombreUsuario;
-        private string apellidoUsuario;
-        private int edadUsuario;
-        private string correoUsuario;
-        private string correoUsuarioDos;
-        private string userUsuario;
-        private string passwordUsuario;
-        private string passUsuarioDos;
+
+        private string nombre;
+        private string apellido;
+        private DateTime fechaNacimiento;
+        private string correo;
+        private string user;
+        private string password;
+
         #endregion
 
         #region Propiedades
         /// <summary>
         /// Obtiene o establece el Nombre del Usuario.
         /// </summary>
-        public string NombreUsuario
+        public string Nombre
         {
-            get { return nombreUsuario; }
-            set { nombreUsuario = value; }
+            get { return nombre; }
+            set { nombre = value; }
         }
         /// <summary>
         /// Obtiene o establece el Apellido del Usuario.
         /// </summary>
-        public string ApellidoUsuario
+        public string Apellido
         {
-            get { return apellidoUsuario; }
-            set { apellidoUsuario = value; }
+            get { return apellido; }
+            set { apellido = value; }
         }
         /// <summary>
         /// Obtiene o establece la Edad del Usuario.
         /// </summary>
-        public int EdadUsuario
+        public DateTime Edad
         {
-            get { return edadUsuario; }
-            set { edadUsuario = value; }
+            get { return fechaNacimiento; }
+            set { fechaNacimiento = value; }
         }
 
         /// <summary>
         /// Obtiene o establece el Correo del Usuario.
         /// </summary>
-        public string CorreoUsuario
+        public string Correo
         {
-            get { return correoUsuario; }
-            set { correoUsuario = value; }
-        }
-
-        /// <summary>
-        /// Obtiene o establece el Correo del Usuario.
-        /// </summary>
-        public string CorreoUsuarioDos
-        {
-            get { return correoUsuarioDos; }
-            set { correoUsuarioDos = value; }
+            get { return correo; }
+            set { correo = value; }
         }
 
         /// <summary>
         /// Obtiene o establece el Password del Usuario.
         /// </summary>
-        public string PasswordUsuario
+        public string Password
         {
-            get { return passwordUsuario; }
-            set { passwordUsuario = value; }
-        }
-
-        /// <summary>
-        /// Obtiene o establece el Password del Usuario.
-        /// </summary>
-        public string PassUsuarioDos
-        {
-            get { return passUsuarioDos; }
-            set { passUsuarioDos = value; }
+            get { return password; }
+            set { password = value; }
         }
 
         /// <summary>
         /// Obtiene o establece el Usuario del Usuario.
         /// </summary>
-        public string UserUsuario
+        public string User
         {
-            get { return userUsuario; }
-            set { userUsuario = value; }
+            get { return user; }
+            set { user = value; }
         }
         #endregion
 
@@ -98,39 +80,28 @@ namespace BibliotecaTuLibro
         /// </summary>
         public Usuario()
         {
-            nombreUsuario = string.Empty;
-            apellidoUsuario = string.Empty;
-            edadUsuario = 0;
-            correoUsuario = string.Empty;
-            correoUsuarioDos = string.Empty;
-            passwordUsuario = string.Empty;
-            passUsuarioDos = string.Empty;
-            userUsuario = string.Empty;
+            Init();
         }
 
         /// <summary>
         /// Constructor con parametros que establece los valores de Usuario
         /// de acuerdo a los parametros recibidos.
         /// </summary>
-        /// <param name="nombreUsuario">Establece el Nombre del Usuario.</param>
-        /// <param name="apellidoUsuario">Establece el Apellido del Usuario.</param>
-        /// <param name="edadUsuario">Establece la Edad del Usuario.</param>
-        /// <param name="correoUsuario">Establece el Correo del Usuario.</param>
-        /// <param name="correoUsuarioDos">Establece el Correo dos del Usuario.</param>
-        /// <param name="userUsuario">Establece el User del Usuario.</param>
-        /// <param name="passwordUsuario">Establece la Password del Usuario.</param>
-        /// <param name="passUsuarioDos">Establece la Password 2 del Usuario.</param>
-        public Usuario(string nombreUsuario,string apellidoUsuario,int edadUsuario,string correoUsuario,string correoUsuarioDos,
-            string userUsuario,string passwordUsuario,string passUsuarioDos)
+        /// <param name="nombre">Establece el nombre del usuario</param>
+        /// <param name="apellido">Establece el apellido del usuario</param>
+        /// <param name="fechaNacimiento">Establece la fechaNacimiento del usuario</param>
+        /// <param name="correo">Establece el correo del usuario</param>
+        /// <param name="user">Establece el user del usuario</param>
+        /// <param name="password">Establece el password del usuario</param>
+        public Usuario(string nombre, string apellido, DateTime fechaNacimiento, string correo, string user, string password)
         {
-            this.nombreUsuario = nombreUsuario;
-            this.apellidoUsuario = apellidoUsuario;
-            this.edadUsuario = edadUsuario;
-            this.correoUsuario = correoUsuario;
-            this.correoUsuarioDos = correoUsuarioDos;
-            this.userUsuario = userUsuario;
-            this.passUsuarioDos = passUsuarioDos;
-            this.passwordUsuario = passwordUsuario;
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.fechaNacimiento = fechaNacimiento;
+            this.correo = correo;
+            this.user = user;
+            this.password = password;
+
         }
         #endregion
 
@@ -143,7 +114,7 @@ namespace BibliotecaTuLibro
         /// <returns></returns>
         public override string ToString()
         {
-            return string.Format("Nombre {0}  Apellido {1}" ,nombreUsuario,apellidoUsuario);
+            return string.Format("Nombre {0}  Apellido {1}", nombre, apellido);
         }
 
         /// <summary>
@@ -155,21 +126,33 @@ namespace BibliotecaTuLibro
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine(string.Format("Nombre : {0}", nombreUsuario));
-            sb.AppendLine(string.Format("Apellido : {0}", apellidoUsuario));
-            sb.AppendLine(string.Format("Edad : {0}", edadUsuario));
-            sb.AppendLine(string.Format("Correo Electronico : {0}", correoUsuario));
-            sb.AppendLine(string.Format("Usuario : {0}", userUsuario));
+            sb.AppendLine(string.Format("Nombre : {0}", nombre));
+            sb.AppendLine(string.Format("Apellido : {0}", apellido));
+            sb.AppendLine(string.Format("Edad : {0}", DateTime.Now.Year - fechaNacimiento.Year));
+            sb.AppendLine(string.Format("Correo Electronico : {0}", correo));
+            sb.AppendLine(string.Format("Usuario : {0}", user));
 
             string passMostrar = "";
 
-            for (int i = 0; i < passwordUsuario.Length; i++)
+            for (int i = 0; i < password.Length; i++)
             {
                 passMostrar = passMostrar + "*";
             }
             sb.AppendLine(string.Format("Pass : {0}", passMostrar));
 
             return sb.ToString();
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        private void Init()
+        {
+            nombre = string.Empty;
+            apellido = string.Empty;
+            fechaNacimiento = new DateTime(1900, 1, 1);
+            correo = string.Empty;
+            password = string.Empty;
+            user = string.Empty;
         }
         #endregion
 
