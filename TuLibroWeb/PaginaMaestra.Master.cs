@@ -11,7 +11,16 @@ namespace TuLibroWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["nombreUsuario"] != null)
+            {
+                btnCerrarSesion.Visible = true;
+                btnInicioSesion.Visible = false;
+            }
+            else
+            {
+                btnCerrarSesion.Visible = false;
+                btnInicioSesion.Visible = true;
+            }
         }
     }
 }

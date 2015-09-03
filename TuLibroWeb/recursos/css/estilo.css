@@ -95,6 +95,38 @@
     border-width : 1px;
     border-style :solid;
     border-color : Black;
+    overflow : auto;
+}
+
+.thumbnail 
+{
+    width : 70px;
+    height : 104px;
+    margin : 5px;
+    float : left;
+}
+
+.header-label 
+{
+    position : relative;
+    padding : 10px;
+    top : 5px;
+}
+
+.info-libro 
+{
+    float : left;
+    margin : 5px;
+    width: 247px;
+    height: 104px;
+}
+
+.desc-libro
+{
+    float : left;
+    margin : 5px;
+    width : 328px;
+    height: 68px;
 }
 
 

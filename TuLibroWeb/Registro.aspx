@@ -1,10 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="TuLibroWeb.Registro2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Registrarte en Tu Libro</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contenidoBarraIzquierda" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="contenidoCentro" runat="server">
-<div>
+    <div>
         <center>
         <b>Esta información es necesaria para poder crear tu cuenta.</b>
         </center>
@@ -103,7 +104,7 @@
                     <asp:Label ID="lblTerminos" runat="server" Text="Al crear una cuenta, usted acepta las Condiciones 
                     generales de uso, la Declaración de protección de datos y la Política de cookies y publicidad 
                     en Internet de TuLibro."></asp:Label>
-                    </asp:TableCell></asp:TableRow><asp:TableRow>
+                </asp:TableCell></asp:TableRow><asp:TableRow>
                 <asp:TableCell>
                 </asp:TableCell><asp:TableCell>
                     <asp:Button ID="btnRegistrarse" runat="server" OnClick="btnRegistrarse_Click"

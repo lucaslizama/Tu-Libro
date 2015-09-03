@@ -11,7 +11,14 @@ namespace TuLibroWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["nombreUsuario"] != null)
+            {
 
+            }
+            else
+            {
+                
+            }
         }
     }
 }
