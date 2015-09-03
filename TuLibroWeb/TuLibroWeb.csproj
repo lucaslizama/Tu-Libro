@@ -53,6 +53,9 @@
   <ItemGroup>
     <Content Include="Inicio.aspx" />
     <Content Include="InicioDeSession.aspx" />
+    <Content Include="libros.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="recursos\css\estilo.css" />
     <Content Include="recursos\imagenes\banner.png" />
     <Content Include="recursos\imagenes\banner_transparente.png" />

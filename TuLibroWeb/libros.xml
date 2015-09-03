@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<libro>
+  <nombre>Harry Potter</nombre>
+  <autor>J.K Rowling</autor>
+  <isbn>asdfdsfsad</isbn>
+  <genero>asdfsdf</genero>
+  <editorial>asdfsdf</editorial>
+  <fechaPublicacion>03/08/1994</fechaPublicacion>
+  <edicion>sdfasfd</edicion>
+  <valor>23453</valor>
+  <descripcion>adsfsdafjsdfijñojoisjdafoijsfad</descripcion>
+</libro>

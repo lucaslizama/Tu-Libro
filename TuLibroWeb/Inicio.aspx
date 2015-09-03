@@ -19,24 +19,24 @@
         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" Width="100px" class="search-button"/>
         <div id="librosRecomendados">
             <div class="libro-recomendado">
-                <img id="img-libro-rec-1" class="thumbnail" src="recursos/imagenes/book-thumbnails/07.jpg" alt="Libro Recomendado 1"/>
-                <p id="info-libro-rec-1" class="info-libro"></p>
-                <p id="desc-libro-rec-1" class="desc-libro"></p>
+                <img id="imgLibroRec1" class="thumbnail" runat="server" src="recursos/imagenes/book-thumbnails/07.jpg" alt="Libro Recomendado 1"/>
+                <p id="infoLibroRec1" class="info-libro" runat="server"></p>
+                <p id="desclibrorec1" class="desc-libro" runat="server"></p>
             </div>
             <div class="libro-recomendado">
-                <img id="img-libro-rec-2" class="thumbnail" src="recursos/imagenes/book-thumbnails/08.jpg" alt="Libro Recomendado 1"/>
-                <p id="info-libro-rec-2" class="info-libro"></p>
-                <p id="desc-libro-rec-2" class="desc-libro"></p>
+                <img id="imgLibroRec2" class="thumbnail" runat="server" src="recursos/imagenes/book-thumbnails/08.jpg" alt="Libro Recomendado 1"/>
+                <p id="infoLibroRec2" class="info-libro" runat="server"></p>
+                <p id="desclibrorec2" class="desc-libro" runat="server"></p>
             </div>
             <div class="libro-recomendado">
-                <img id="img-libro-rec-3" class="thumbnail" src="recursos/imagenes/book-thumbnails/11.jpg" alt="Libro Recomendado 1"/>
-                <p id="info-libro-rec-3" class="info-libro"></p>
-                <p id="desc-libro-rec-3" class="desc-libro"></p>
+                <img id="imgLibroRec3" class="thumbnail" runat="server" src="recursos/imagenes/book-thumbnails/11.jpg" alt="Libro Recomendado 1"/>
+                <p id="infoLibroRec3" class="info-libro" runat="server" ></p>
+                <p id="desclibrorec3" class="desc-libro" runat="server"></p>
             </div>
             <div class="libro-recomendado">
-                <img id="img-libro-rec-4" class="thumbnail" src="recursos/imagenes/book-thumbnails/13.jpg" alt="Libro Recomendado 1"/>
-                <p id="info-libro-rec-4" class="info-libro"></p>
-                <p id="desc-libro-rec-4" class="desc-libro"></p>
+                <img id="imgLibroRec4" class="thumbnail" runat="server" src="recursos/imagenes/book-thumbnails/13.jpg" alt="Libro Recomendado 1"/>
+                <p id="infoLibroRec4" class="info-libro" runat="server"></p>
+                <p id="desclibrorec4" class="desc-libro" runat="server"></p>
             </div>
         </div>
     </fieldset>
