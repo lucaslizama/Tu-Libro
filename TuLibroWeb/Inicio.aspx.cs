@@ -22,11 +22,14 @@ namespace TuLibroWeb
                 doc.Load(Server.MapPath("~/libros.xml"));
                 _stock = new Stock();
                 _stock.CargarStock(doc);
+                _libros = _stock.ListarLibros();
                 Session["stock"] = _stock;
+                Session["libros"] = _libros;
             }
             else
             {
                 _stock = Session["stock"] as Stock;
+                _libros = Session["libros"] as List<Libro>;
             }
 
             if (Session["nombreUsuario"] != null)
