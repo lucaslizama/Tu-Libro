@@ -34,13 +34,15 @@ namespace TuLibroWeb
 
             if (Session["nombreUsuario"] != null)
             {
-                
+
             }
             else
             {
-                
+
             }
             desclibrorec1.InnerHtml = _stock.Libros.Count.ToString();
+
         }
+
     }
 }
