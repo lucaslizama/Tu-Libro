@@ -11,11 +11,23 @@ namespace TuLibroWeb
 {
     public partial class Inicio : System.Web.UI.Page
     {
-        private List<Libro> libros; 
+        private List<Libro> _libros;
+        private Stock _stock;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            initLibros();
+            if (Session["stock"] == null)
+            {
+                XmlDocument doc = new XmlDocument();
+                doc.Load(Server.MapPath("~/libros.xml"));
+                _stock = new Stock();
+                _stock.CargarStock(doc);
+                Session["stock"] = _stock;
+            }
+            else
+            {
+                _stock = Session["stock"] as Stock;
+            }
 
             if (Session["nombreUsuario"] != null)
             {
@@ -25,36 +37,7 @@ namespace TuLibroWeb
             {
                 
             }
-        }
-
-        private void initLibros()
-        {
-            XmlDocument doc = new XmlDocument();
-            doc.Load(Server.MapPath("~/libros.xml"));
-
-            string text = string.Empty;
-
-            foreach (XmlNode node in doc.DocumentElement.ChildNodes)
-            {
-                if (node.Name.Equals("libro"))
-                {
-                    String nombre = node.ChildNodes[0].InnerText;
-                    String autor = node.ChildNodes[1].InnerText;
-                    String isbn = node.ChildNodes[2].InnerText;
-                    String genero = node.ChildNodes[3].InnerText;
-                    String editorial = node.ChildNodes[4].InnerText;
-                    String edicion = node.ChildNodes[6].InnerText;
-                    int valor = int.Parse(node.ChildNodes[7].InnerText);
-                    String descripcion = node.ChildNodes[8].InnerText;
-                    String fecha = node.ChildNodes[5].InnerText;
-                    DateTime fechaPublicacion = new DateTime(int.Parse(fecha.Substring(6,10)),
-                                                int.Parse(fecha.Substring(3,5)),
-                                                int.Parse(fecha.Substring(0,2)));
-                    Libro libro = new Libro(nombre, valor, descripcion, edicion, genero, 
-                                            isbn, autor, editorial, fechaPublicacion);
-                    libros.Add(libro);
-                }   
-            }
+            desclibrorec1.InnerHtml = _stock.Libros.Count.ToString();
         }
     }
 }

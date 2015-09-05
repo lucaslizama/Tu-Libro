@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<libro>
+<libro stock="20">
   <nombre>Harry Potter</nombre>
   <autor>J.K Rowling</autor>
   <isbn>asdfdsfsad</isbn>

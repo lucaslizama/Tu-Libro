@@ -55,6 +55,7 @@
     <Content Include="InicioDeSession.aspx" />
     <Content Include="libros.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="recursos\css\estilo.css" />
     <Content Include="recursos\imagenes\banner.png" />
