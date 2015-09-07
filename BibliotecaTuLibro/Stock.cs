@@ -52,7 +52,7 @@ namespace BibliotecaTuLibro
                 return;
             else
             {
-                foreach (XmlNode node in doc.ChildNodes)
+                foreach (XmlNode node in doc.DocumentElement.ChildNodes)
                 {
                     if (node.Name == "libro")
                     {
@@ -88,8 +88,10 @@ namespace BibliotecaTuLibro
             DateTime fechaPublicacion = new DateTime(int.Parse(fecha.Substring(6, 2)),
                                         int.Parse(fecha.Substring(3, 2)),
                                         int.Parse(fecha.Substring(0, 2)));
+            int paginas = int.Parse(node.ChildNodes[9].InnerText);
+            string imagen = node.ChildNodes[10].InnerText;
             Libro libro = new Libro(nombre, valor, descripcion, edicion, genero,
-                                    isbn, autor, editorial, fechaPublicacion);
+                                    isbn, autor, editorial, fechaPublicacion,paginas,imagen);
             return libro;
         }
 
@@ -103,7 +105,7 @@ namespace BibliotecaTuLibro
             List<Libro> filtrado = new List<Libro>();
             foreach (Libro l in _libros)
             {
-                if (!Buscar(l, filtrado))
+                if (!ExisteLibro(l, filtrado))
                     filtrado.Add(l);
             }
             return filtrado;
@@ -116,7 +118,7 @@ namespace BibliotecaTuLibro
         /// <param name="libro">El libro</param>
         /// <param name="libros">La lista</param>
         /// <returns></returns>
-        private bool Buscar(Libro libro, List<Libro> libros)
+        private bool ExisteLibro(Libro libro, List<Libro> libros)
         {
             foreach (Libro l in libros)
             {
@@ -124,6 +126,12 @@ namespace BibliotecaTuLibro
                     return true;
             }
             return false;
+        }
+
+        private static Libro BuscarPorIsbn(string isbn, List<Libro> libros)
+        {
+            //TODO Metodo que busque un libro por su ISBN
+            return null;
         }
         #endregion
     }

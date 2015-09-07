@@ -15,10 +15,33 @@ namespace BibliotecaTuLibro
         private string _autor;
         private string _editorial;
         private DateTime _fechaPublicacion;
+        private int _paginas;
+        private string _nombreImagen;
+
+        
 
         #endregion
 
         #region Propiedades
+        /// <summary>
+        /// Obtiene o establece el nombre del archivo
+        /// que contiene la imagen de este libro.
+        /// </summary>
+        public string NombreImagen
+        {
+            get { return _nombreImagen; }
+            set { _nombreImagen = value; }
+        }
+
+        /// <summary>
+        /// Obtiene o establece el numero de paginas del libro.
+        /// </summary>
+        public int Paginas
+        {
+            get { return _paginas; }
+            set { _paginas = value; }
+        }
+
         /// <summary>
         /// Obtiene o establece la Edicion del Libro.
         /// </summary>
@@ -94,7 +117,7 @@ namespace BibliotecaTuLibro
         /// <param name="editorial">Establece la editorial del Libro</param>
         /// <param name="fechaPublicacion">Establece la fecha de publicacion del Libro</param>
         public Libro(string nombre, double valor, string descripcion, string edicion, string genero, string isbn,
-            string autor, string editorial, DateTime fechaPublicacion)
+            string autor, string editorial, DateTime fechaPublicacion, int paginas, string nombreImagen)
             : base(nombre, valor, descripcion)
         {
             this._edicion = edicion;
@@ -118,6 +141,8 @@ namespace BibliotecaTuLibro
             _editorial = string.Empty;
             _fechaPublicacion = new DateTime(1900, 1, 1);
             _isbn = string.Empty;
+            _paginas = 1;
+            _nombreImagen = string.Empty;
         }
         /// <summary>
         /// Metodo que muestra la informacion del Libro.
@@ -127,15 +152,13 @@ namespace BibliotecaTuLibro
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine(string.Format("Nombre del Libro : {0}", _nombre));
-            sb.AppendLine(string.Format("Fecha de Publicacion : {0}", _fechaPublicacion));
+            sb.AppendLine(string.Format("{0}", _nombre));
+            sb.AppendLine(string.Format("Publicado : {0}", _fechaPublicacion));
             sb.AppendLine(string.Format("ISBN : {0}", _isbn));
-            sb.AppendLine(string.Format("Nombre del Autor : {0}", _autor));
+            sb.AppendLine(string.Format("Autor : {0}", _autor));
             sb.AppendLine(string.Format("Editorial : {0}", _edicion));
             sb.AppendLine(string.Format("Valor : {0}", _valor));
-            sb.AppendLine(string.Format("Descripcion : {0}", _descripcion));
-            sb.AppendLine(string.Format("Edicion del Libro :{0}", _edicion));
-            sb.AppendLine(string.Format("Genero del Libro :{0}", _genero));
+            sb.AppendLine(string.Format("Genero : {0}", _genero));
 
             return sb.ToString();
         }

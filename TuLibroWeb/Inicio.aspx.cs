@@ -13,8 +13,28 @@ namespace TuLibroWeb
     {
         private List<Libro> _libros;
         private Stock _stock;
+        private CarritoCompra _carrito;
 
         protected void Page_Load(object sender, EventArgs e)
+        {
+            InicializarUsuario();
+            InicializarStock();
+            InicializarCarrito();
+        }
+
+        private void InicializarUsuario()
+        {
+            if (Session["nombreUsuario"] != null)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+
+        private void InicializarStock()
         {
             if (Session["stock"] == null)
             {
@@ -31,17 +51,19 @@ namespace TuLibroWeb
                 _stock = Session["stock"] as Stock;
                 _libros = Session["libros"] as List<Libro>;
             }
+        }
 
-            if (Session["nombreUsuario"] != null)
+        private void InicializarCarrito()
+        {
+            if (Session["carrito"] == null)
             {
-
+                _carrito = new CarritoCompra();
+                Session["carrito"] = _carrito;
             }
             else
             {
-
+                _carrito = Session["carrito"] as CarritoCompra;
             }
-            desclibrorec1.InnerHtml = _stock.Libros.Count.ToString();
-
         }
 
     }

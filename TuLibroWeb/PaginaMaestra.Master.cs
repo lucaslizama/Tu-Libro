@@ -15,11 +15,13 @@ namespace TuLibroWeb
             {
                 btnCerrarSesion.Visible = true;
                 btnInicioSesion.Visible = false;
+                lblBienvenida.Visible = true;
             }
             else
             {
                 btnCerrarSesion.Visible = false;
                 btnInicioSesion.Visible = true;
+                lblBienvenida.Visible = false;
             }
         }
     }
