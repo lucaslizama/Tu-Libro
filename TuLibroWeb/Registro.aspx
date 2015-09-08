@@ -82,10 +82,7 @@
                         <asp:RequiredFieldValidator runat="server" ID="rfvPassword"
                         ForeColor="Red" ErrorMessage=" * Ingrese una Pasword"
                         ControlToValidate="txtPassword" Display="Dynamic" />
-                        <asp:RegularExpressionValidator runat="server" ID="revPassword" 
-                        ForeColor="Red" ErrorMessage=" * Su Password es muy debil "
-                        ControlToValidate="txtPassword"
-                        ValidationExpression="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/;" Display="Dynamic" />
+                        
                     </asp:TableCell></asp:TableRow><asp:TableRow>
                     <asp:TableCell>
                         <asp:Label ID="lblPassword2" Text="Reingrese Password" runat="server" />

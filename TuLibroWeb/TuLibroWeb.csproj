@@ -76,6 +76,7 @@
     <Content Include="recursos\imagenes\carro_gris.png" />
     <Content Include="recursos\imagenes\carro_negro.png" />
     <Content Include="Registro.aspx" />
+    <Content Include="RegistroCompletado.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -113,6 +114,13 @@
     </Compile>
     <Compile Include="Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroCompletado.aspx.cs">
+      <DependentUpon>RegistroCompletado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroCompletado.aspx.designer.cs">
+      <DependentUpon>RegistroCompletado.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
