@@ -117,8 +117,10 @@
 {
     float : left;
     margin : 5px;
-    width: 247px;
+    width: 230px;
     height: 104px;
+    overflow : auto;
+    font-size : 11px;
 }
 
 .desc-libro
@@ -127,6 +129,7 @@
     margin : 5px;
     width : 328px;
     height: 68px;
+    overflow: auto;
 }
 
 
