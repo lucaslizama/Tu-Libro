@@ -97,13 +97,13 @@ namespace BibliotecaTuLibro
 
         /// <summary>
         /// Metodo que devuelve una lista con una sola
-        /// instancia de cada libro en el stock
+        /// instancia de cada libro de la lista suministrada
         /// </summary>
-        /// <returns>Lista con una instancia de cada libro en el stock</returns>
-        public List<Libro> ListarLibros()
+        /// <returns>Lista con una instancia de cada libro de la lista suministrada</returns>
+        public static List<Libro> ListarLibros(List<Libro> libros)
         {
             List<Libro> filtrado = new List<Libro>();
-            foreach (Libro l in _libros)
+            foreach (Libro l in libros)
             {
                 if (!ExisteLibro(l, filtrado))
                     filtrado.Add(l);
@@ -118,7 +118,7 @@ namespace BibliotecaTuLibro
         /// <param name="libro">El libro</param>
         /// <param name="libros">La lista</param>
         /// <returns></returns>
-        private bool ExisteLibro(Libro libro, List<Libro> libros)
+        private static bool ExisteLibro(Libro libro, List<Libro> libros)
         {
             foreach (Libro l in libros)
             {
@@ -128,9 +128,30 @@ namespace BibliotecaTuLibro
             return false;
         }
 
-        private static Libro BuscarPorIsbn(string isbn, List<Libro> libros)
+        /// <summary>
+        /// Metodo que devuelve la cantidad existente de un libro
+        /// en una lista
+        /// </summary>
+        /// <param name="libro">El libro a contar</param>
+        /// <returns>La ca</returns>
+        public static int Cantidad(Libro libro,List<Libro> libros)
         {
-            //TODO Metodo que busque un libro por su ISBN
+            int contador = 0;
+            foreach (Libro l in libros)
+            {
+                if (l.Nombre == libro.Nombre)
+                    contador++;
+            }
+            return contador;
+        }
+
+        public static Libro BuscarPorIsbn(string isbn, List<Libro> libros)
+        {
+            foreach (Libro l in libros)
+            {
+                if (l.Isbn.Equals(isbn))
+                    return l;
+            }
             return null;
         }
         #endregion

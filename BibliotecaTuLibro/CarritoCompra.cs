@@ -40,29 +40,12 @@ namespace BibliotecaTuLibro
             foreach (Libro l in filtrados)
             {
                 sb.AppendLine(string.Format("{0}.- Nombre: {1}  Cantidad: {2}  Precio: ${3} <br />",
-                              i, l.Nombre, Cantidad(l), l.Valor));
+                              i, l.Nombre, Stock.Cantidad(l,_productos), l.Valor));
                 i++;
             }
 
             return sb.ToString();
 
-        }
-
-        /// <summary>
-        /// Metodo que devuelve la cantidad existente de un libro
-        /// en el carro de compras
-        /// </summary>
-        /// <param name="libro">El libro</param>
-        /// <returns>La cantidad del dicho libro en el carro de compras</returns>
-        private int Cantidad(Libro libro)
-        {
-            int contador = 0;
-            foreach (Libro l in _productos)
-            {
-                if (l.Nombre == libro.Nombre)
-                    contador++;
-            }
-            return contador;
         }
 
         /// <summary>
