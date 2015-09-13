@@ -43,19 +43,19 @@ namespace TuLibroWeb
 
             imgLibroRec1.Attributes["src"] = "recursos/imagenes/book-thumbnails/" + rec1.NombreImagen;
             infoLibroRec1.InnerHtml = rec1.MostrarDatos();
-            desclibrorec1.InnerHtml = rec1.Descripcion.Substring(0, 170) + "...";
+            desclibrorec1.InnerHtml = rec1.Descripcion.Substring(0, 270) + "...";
 
             imgLibroRec2.Attributes["src"] = "recursos/imagenes/book-thumbnails/" + rec2.NombreImagen;
             infoLibroRec2.InnerHtml = rec2.MostrarDatos();
-            desclibrorec2.InnerHtml = rec2.Descripcion.Substring(0, 170) + "...";
+            desclibrorec2.InnerHtml = rec2.Descripcion.Substring(0, 270) + "...";
 
             imgLibroRec3.Attributes["src"] = "recursos/imagenes/book-thumbnails/" + rec3.NombreImagen;
             infoLibroRec3.InnerHtml = rec3.MostrarDatos();
-            desclibrorec3.InnerHtml = rec3.Descripcion.Substring(0, 170) + "...";
+            desclibrorec3.InnerHtml = rec3.Descripcion.Substring(0, 270) + "...";
 
             imgLibroRec4.Attributes["src"] = "recursos/imagenes/book-thumbnails/" + rec4.NombreImagen;
             infoLibroRec4.InnerHtml = rec4.MostrarDatos();
-            desclibrorec4.InnerHtml = rec4.Descripcion.Substring(0, 170) + "...";
+            desclibrorec4.InnerHtml = rec4.Descripcion.Substring(0, 270) + "...";
         }
 
         private void InicializarUsuarios()

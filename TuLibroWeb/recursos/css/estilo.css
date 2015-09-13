@@ -127,9 +127,14 @@
 {
     float : left;
     margin : 5px;
+    padding : 0px;
     width : 328px;
     height: 68px;
     overflow: auto;
+    font-family : Times New Roman Sans-Serif Serif Arial;
+    font-size : 13px;
+    border-style : dotted;
+    border-width : 1px;
 }
 
 #campos-login 
