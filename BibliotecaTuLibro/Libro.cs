@@ -156,7 +156,7 @@ namespace BibliotecaTuLibro
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine(string.Format("{0}<br />", _nombre));
-            sb.AppendLine(string.Format("Publicado : {0}<br />", _fechaPublicacion));
+            sb.AppendLine(string.Format("Publicado : {0}<br />", _fechaPublicacion.ToString("dd/MM/yyyy")));
             sb.AppendLine(string.Format("ISBN : {0}<br />", _isbn));
             sb.AppendLine(string.Format("Autor : {0}<br />", _autor));
             sb.AppendLine(string.Format("Editorial : {0}<br />", _edicion));

@@ -85,7 +85,7 @@ namespace BibliotecaTuLibro
             int valor = int.Parse(node.ChildNodes[7].InnerText);
             String descripcion = node.ChildNodes[8].InnerText;
             String fecha = node.ChildNodes[5].InnerText;
-            DateTime fechaPublicacion = new DateTime(int.Parse(fecha.Substring(6, 2)),
+            DateTime fechaPublicacion = new DateTime(int.Parse(fecha.Substring(6, 4)),
                                         int.Parse(fecha.Substring(3, 2).Trim("0".ToCharArray())),
                                         int.Parse(fecha.Substring(0, 2).Trim("0".ToCharArray())));
             int paginas = int.Parse(node.ChildNodes[9].InnerText);
