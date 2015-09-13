@@ -10,21 +10,25 @@
         <b>Esta información es necesaria para poder crear tu cuenta.</b>
         </center>
         <br />
-        <center>                        
-           <asp:Table ID="Table1" runat="server" BorderColor="Black" BorderWidth="3" Width="800px">
+        <fieldset id="campos-registro">  
+           <legend>Ingrese sus Datos</legend>                      
+           <asp:Table ID="Table1" runat="server" Width="800px">
                 <asp:TableRow>
-                     <asp:TableCell>
-                        <asp:Label ID="lblNombre" Text="Ingrese Su Nombre" runat="server" />
+                     <asp:TableCell Width="180px">
+                        <asp:Label ID="lblNombre" Text="Nombre" runat="server" />
                      </asp:TableCell><asp:TableCell>
                         <asp:TextBox ID="txtNombre" runat="server" />
-                    </asp:TableCell><asp:TableCell>
+                    </asp:TableCell>
+                    <asp:TableCell Width="230px">
                         <asp:RequiredFieldValidator runat="server" ForeColor="Red"
                         ErrorMessage=" * Ingrese un Nombre en el campo"
                         ControlToValidate="txtNombre" ID="rfvNombre"/>
-                    </asp:TableCell></asp:TableRow><asp:TableRow>
-                     <asp:TableCell>
-                        <asp:Label ID="lblApellido" Text="Ingrese Su Apellido" runat="server" />
-                     </asp:TableCell><asp:TableCell>
+                    </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow>
+                    <asp:TableCell>
+                        <asp:Label ID="lblApellido" Text="Apellido" runat="server" />
+                    </asp:TableCell><asp:TableCell>
                         <asp:TextBox ID="txtApellido" runat="server" />
                     </asp:TableCell><asp:TableCell>
                         <asp:RequiredFieldValidator runat="server" ForeColor="Red"
@@ -32,7 +36,7 @@
                         ControlToValidate="txtApellido" ID="rfvApellido"/>
                     </asp:TableCell></asp:TableRow><asp:TableRow>
                      <asp:TableCell>
-                        <asp:Label ID="lblUser" Text="Ingrese un nombre de usuario" runat="server" />
+                        <asp:Label ID="lblUser" Text="Nombre de usuario" runat="server" />
                      </asp:TableCell><asp:TableCell>
                         <asp:TextBox ID="txtUser" runat="server" />
                     </asp:TableCell><asp:TableCell>
@@ -41,7 +45,7 @@
                         ControlToValidate="txtUser" ID="rfvUser"/>
                     </asp:TableCell></asp:TableRow><asp:TableRow>
                     <asp:TableCell>
-                        <asp:Label ID="lblEdad" Text="Ingrese Su Edad" runat="server" />
+                        <asp:Label ID="lblEdad" Text="Edad" runat="server" />
                     </asp:TableCell><asp:TableCell>
                         <asp:TextBox ID="txtEdad" runat="server" />
                     </asp:TableCell><asp:TableCell>
@@ -53,7 +57,7 @@
                         Display="Dynamic" ErrorMessage=" * Ingrese una Edad mayor a 17 y menor a 111 años " />
                     </asp:TableCell></asp:TableRow><asp:TableRow>
                     <asp:TableCell>
-                        <asp:Label ID="lblCorreoUsuario" Text="Ingrese Su Correo" runat="server" />
+                        <asp:Label ID="lblCorreoUsuario" Text="Correo" runat="server" />
                     </asp:TableCell><asp:TableCell>
                         <asp:TextBox ID="txtCorreoUsuario" runat="server" />
                     </asp:TableCell><asp:TableCell>
@@ -63,7 +67,7 @@
                         Display="Dynamic"/>
                     </asp:TableCell></asp:TableRow><asp:TableRow>
                     <asp:TableCell>
-                        <asp:Label ID="lblCorreoUsuario2" Text="Reingrese Su Correo" runat="server" />
+                        <asp:Label ID="lblCorreoUsuario2" Text="Reingrese Correo" runat="server" />
                     </asp:TableCell><asp:TableCell>
                         <asp:TextBox ID="txtCorreoUsuario2" runat="server" />
                     </asp:TableCell><asp:TableCell>
@@ -75,7 +79,7 @@
                         ErrorMessage=" * Sus Correos no Son Iguales " Display="Dynamic" />
                     </asp:TableCell></asp:TableRow><asp:TableRow>
                     <asp:TableCell>
-                        <asp:Label ID="lblPassword" Text="Password" runat="server" />
+                        <asp:Label ID="lblPassword" Text="Contraseña" runat="server" />
                     </asp:TableCell><asp:TableCell>
                         <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"/>
                     </asp:TableCell><asp:TableCell>
@@ -85,7 +89,7 @@
                         
                     </asp:TableCell></asp:TableRow><asp:TableRow>
                     <asp:TableCell>
-                        <asp:Label ID="lblPassword2" Text="Reingrese Password" runat="server" />
+                        <asp:Label ID="lblPassword2" Text="Reingrese Contraseña" runat="server" />
                     </asp:TableCell><asp:TableCell>
                         <asp:TextBox ID="txtPassword2" runat="server" TextMode="Password"/>
                     </asp:TableCell><asp:TableCell>
@@ -97,15 +101,21 @@
                         ErrorMessage=" * Lo Ingresado no concide con la Password, reingrese" Display="Dynamic"/>
                     </asp:TableCell></asp:TableRow><asp:TableRow>
                 <asp:TableCell>                    
-                </asp:TableCell><asp:TableCell>
-                    <asp:Label ID="lblTerminos" runat="server" Text="Al crear una cuenta, usted acepta las Condiciones 
+                </asp:TableCell>
+                <asp:TableCell>
+                </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+            <div id="terminos-condiciones">
+                <asp:Label ID="lblTerminos" runat="server" Text="Al crear una cuenta, usted acepta las Condiciones 
                     generales de uso, la Declaración de protección de datos y la Política de cookies y publicidad 
                     en Internet de TuLibro."></asp:Label>
-                </asp:TableCell></asp:TableRow><asp:TableRow>
-                <asp:TableCell>
-                </asp:TableCell><asp:TableCell>
-                    <asp:Button ID="btnRegistrarse" runat="server" OnClick="btnRegistrarse_Click"
-                    Text="Registrarse" />
-                </asp:TableCell><asp:TableCell>
-                </asp:TableCell></asp:TableRow></asp:Table></center></div></asp:Content><asp:Content ID="Content4" ContentPlaceHolderID="contenidoBarraDerecha" runat="server">
+            </div>
+            <div id="btn-registro-registro">
+                <asp:Button ID="btnRegistrarse" class="login-button" runat="server" OnClick="btnRegistrarse_Click" Text="Registrarse" />
+            </div>
+        </fieldset> 
+    </div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="contenidoBarraDerecha" runat="server">
 </asp:Content>

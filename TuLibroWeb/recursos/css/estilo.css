@@ -152,5 +152,28 @@
     border-radius : 10px;
 }
 
+#campos-registro
+{
+    margin : 10px auto 0px auto;
+}
+
+#terminos-condiciones 
+{
+    padding : auto;
+    width : 500px;
+    overflow : auto;
+    font-family : @Times New Roman Serif Sans-Serif;
+    font-size : 14px;
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
+    
+}
+
+#btn-registro-registro 
+{
+    margin : 10px auto auto 0px;
+}
+
 
 
