@@ -25,5 +25,10 @@ namespace TuLibroWeb
                 lblBienvenida.Visible = false;
             }
         }
+
+        protected void btnInicioSesion_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("InicioDeSession.aspx");
+        }
     }
 }

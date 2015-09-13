@@ -4,12 +4,7 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="contenidoCentro" runat="server">
-
-    <center>
-        <br />
-        <br />
-        <br />
-        <br />
+    <fieldset id="campos-login">
         <asp:Table ID="Table1" runat="server">
             <asp:TableRow>
                 <asp:TableCell>
@@ -24,12 +19,15 @@
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
-        <br /> 
-        <asp:Button ID="btnIniciarSesion" runat="server" Text="Iniciar Sesion" OnClick = "btnIniciarSesion_Click" />
-        <br />
-        <br />
-        <asp:Button ID="btnRegistrarse" runat="server" Text="Registrarse" OnClick = "btnRegistrarse_Click" />
-        <br />
-        <br />
-    </center>
+        <div id="botones-login">
+            <asp:Button ID="btnIniciarSesion" class="login-button" runat="server" Text="Iniciar Sesion" OnClick = "btnIniciarSesion_Click" />
+            <asp:Button ID="btnRegistrarse" class="login-button" runat="server" Text="Registrarse" OnClick = "btnRegistrarse_Click" />
+        </div>
+    </fieldset>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="contenidoBarraDerecha" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="contenidoBarraIzquierda" runat="server">
 </asp:Content>

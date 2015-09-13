@@ -132,5 +132,25 @@
     overflow: auto;
 }
 
+#campos-login 
+{
+    width : 280px;
+    padding-left : 20px;
+    position : relative;
+    margin : auto;
+    top : 10px;
+}
+
+#botones-login 
+{
+    width : auto;
+    padding : auto;
+}
+
+.login-button 
+{
+    border-radius : 10px;
+}
+
 
 

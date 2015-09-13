@@ -17,10 +17,7 @@ namespace TuLibroWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
-         
-   
             
-
         }
         protected void btnRegistrarse_Click(object sender, EventArgs e)
         {
@@ -35,15 +32,8 @@ namespace TuLibroWeb
 
             string url = string.Format("RegistroCompletado.aspx?nombre={0}&apellido={1}&user={2}", nombre, apellido, user);
 
-            Session["nombreUsuario"] = usuario;
+            Session["UsuarioLoggeado"] = usuario;
             Server.Transfer(url);
-
-
-
-            
-            
-            
-
         }
         
     }
