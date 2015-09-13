@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BibliotecaTuLibro;
 
 namespace TuLibroWeb
 {
@@ -11,7 +12,7 @@ namespace TuLibroWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["nombreUsuario"] != null)
+            if (Session["UsuarioLoggeado"] != null)
             {
                 btnCerrarSesion.Visible = true;
                 btnInicioSesion.Visible = false;

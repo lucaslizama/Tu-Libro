@@ -10,6 +10,11 @@ namespace TuLibroWeb
 {
     public partial class MiPerfil : System.Web.UI.Page
     {
+        private List<Libro> _libros;
+        private List<Usuario> _usuarios;
+        private Stock _stock;
+        private CarritoCompra _carrito;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["objUsuario"] != null)
