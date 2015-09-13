@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="contenidoBarraIzquierda" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="contenidoCentro" runat="server">
-    <fieldset id="contenedor-buscador" title="sadasd">
+    <fieldset id="contenedor-buscador">
         <legend>Buscar Libros</legend>
         <asp:Label ID="lblBuscar" runat="server" Text="Buscar por:" />
         <asp:DropDownList ID="ddlBuscador" runat="server">

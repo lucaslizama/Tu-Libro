@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <libreria>
-  <libro stock="20">
+  <libro stock="10">
     <nombre>Harry Potter Y La Piedra Filosofal</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>9788478887590</isbn>
@@ -28,7 +28,7 @@
 	  <paginas>256</paginas>
 	  <imagen>hp-01.jpg</imagen>
   </libro>
-  <libro stock="20">
+  <libro stock="10">
     <nombre>Harry Potter Y La Cámara Secreta</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>8478884955</isbn>
@@ -54,7 +54,7 @@
 	  <paginas>288</paginas>
 	  <imagen>hp-02.jpg</imagen>
   </libro>
-  <libro stock="20">
+  <libro stock="10">
     <nombre>Harry Potter Y El Prisionero De Azkaban</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>9788498384413</isbn>
@@ -79,7 +79,7 @@
 	  <paginas>360</paginas>
 	  <imagen>hp-03.jpg</imagen>
   </libro>
-  <libro stock="20">
+  <libro stock="10">
     <nombre>Harry Potter Y El Caliz De Fuego</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>9788498384437</isbn>
@@ -100,7 +100,7 @@
 	  <paginas>640</paginas>
 	  <imagen>hp-04.jpg</imagen>
   </libro>
-  <libro stock="20">
+  <libro stock="10">
     <nombre>Harry Potter Y La Orden Del Fénix</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>847888744X</isbn>
@@ -124,7 +124,7 @@
 	  <paginas>896</paginas>
 	  <imagen>hp-05.jpg</imagen>
   </libro>
-  <libro stock="20">
+  <libro stock="10">
     <nombre>Harry Potter Y El Misterio Del Principe</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>8478889922</isbn>
@@ -148,7 +148,7 @@
 	  <paginas>602</paginas>
 	  <imagen>hp-06.jpg</imagen>
   </libro>
-  <libro stock="20">
+  <libro stock="10">
     <nombre>Harry Potter Y Las Reliquias De La Muerte</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>9788498384499</isbn>
@@ -168,17 +168,115 @@
 	  <paginas>640</paginas>
 	  <imagen>hp-07.jpg</imagen>
   </libro>
-  <libro stock="20">
+  <libro stock="10">
     <nombre>El Resplandor</nombre>
     <autor>Stephen King</autor>
-    <isbn>asdfdsfsad</isbn>
-    <genero>asdfsdf</genero>
-    <editorial>asdfsdf</editorial>
-    <fechaPublicacion>03/08/1994</fechaPublicacion>
-    <edicion>sdfasfd</edicion>
-    <valor>23453</valor>
-    <descripcion>adsfsdafjsdfijñojoisjdafoijsfad</descripcion>
-    <paginas>1</paginas>
+    <isbn>9789875668478</isbn>
+    <genero>Terror, Narrativa Fantastica</genero>
+    <editorial>DeBolsillo</editorial>
+    <fechaPublicacion>28/01/1977</fechaPublicacion>
+    <edicion>Primera Edición</edicion>
+    <valor>9000</valor>
+    <descripcion>
+      REDRUM. Ésa es la palabra que Danny había visto en el espejo. Y, aunque no sabía leer, entendió que era un 
+      mensaje de horror. Danny tenía cinco años, y a esa edad pocos niños saben que los espejos invierten las imágenes
+      y menos aún saben diferenciar entre realidad y fantasía. Pero Danny tenía pruebas de que sus fantasías relacionadas 
+      con el resplandor del espejo acabarían cumpliéndose: REDRUM MURDER, asesinato. De todos modos, necesitaban aquel trabajo 
+      en el hotel. Danny sabía que su madre pensaba en el divorcio y que su padre se obsesionaba con algo
+      muy malo, tan malo como la muerte y el suicidio. Sí, su padre tenía que aceptar la propuesta de cuidar de aquel hotel de 
+      lujo de más de cien habitaciones, aislado por la nieve durante seis meses. Hasta el deshielo iban a estar solos... ¿Solos?
+    </descripcion>
+    <paginas>656</paginas>
     <imagen>sk-resplandor.jpg</imagen>
+  </libro>
+  <libro stock="10">
+    <nombre>El Resplandor</nombre>
+    <autor>Stephen King</autor>
+    <isbn>9789871138999</isbn>
+    <genero>Terror, Narrativa Fantastica</genero>
+    <editorial>DeBolsillo</editorial>
+    <fechaPublicacion>05/04/1974</fechaPublicacion>
+    <edicion>Primera Edición</edicion>
+    <valor>7000</valor>
+    <descripcion>
+      El escalofriante caso de una joven de apariencia insignificante que se transformó en un ser de poderes anormales, sembrando 
+      el terror en la ciudad. Con pulso mágico para mantener la tensión a lo largo de todo el libro, Stephen King narra la atormentada 
+      adolescencia de Carrie, y nos envuelve en una atmósfera sobrecogedora cuando la muchacha realiza una serie de descubrimientos 
+      hasta llegar al terrible momento de la venganza. Esta novela fue llevada al cine con un inmenso éxito de público y crítica.
+    </descripcion>
+    <paginas>256</paginas>
+    <imagen>sk-carrie.jpg</imagen>
+  </libro>
+  <libro stock="10">
+    <nombre>El Talisman</nombre>
+    <autor>Stephen King,Peter Straub</autor>
+    <isbn>9781451697216</isbn>
+    <genero>Terror, Narrativa Fantastica</genero>
+    <editorial>Simon y Schuster</editorial>
+    <fechaPublicacion>08/11/1984</fechaPublicacion>
+    <edicion>Primera Edición</edicion>
+    <valor>10000</valor>
+    <descripcion>
+      Why had twelve-year-old Jack Sawyer s mother frantically moved the two of them from Rodeo Drive to a New York City apartment to 
+      the Alhambra, a fading ocean resort and shuttered amusement park in New Hampshire? Who or what is she running from? She is dying . . . 
+      and even young Jack knows she can t outrun death. But only he can save her for he has been chosen to search for a prize across an 
+      epic landscape of dangers and lies, a realm of innocents and monsters, where everything Jack loves is on the line.
+    </descripcion>
+    <paginas>921</paginas>
+    <imagen>sk-talisman.jpg</imagen>
+  </libro>
+  <libro stock="10">
+    <nombre>Los Juegos del Hambre</nombre>
+    <autor>Suzanne Collins</autor>
+    <isbn>9789876091657</isbn>
+    <genero>Ciencia Ficcion</genero>
+    <editorial>Del Nuevo Extremo</editorial>
+    <fechaPublicacion>14/09/2008</fechaPublicacion>
+    <edicion>Primera Edición</edicion>
+    <valor>20000</valor>
+    <descripcion>
+      Cuando su hermana pequeña es elegida para los Juegos, Katniss no duda en ocupar su lugar, decidida a demostrar con su actitud firme y
+      decidida que aún en la situaciones más desesperadas hay lugar para el amor y el respeto. Como una auténtica heroína, intentará elegir 
+      la amistad en vez de la traición, imponer sus propios principios antes que los deseos de los tiranos. Su ejemplar y emocionante aventura 
+      nos mantendrá en vilo hasta el final.
+    </descripcion>
+    <paginas>396</paginas>
+    <imagen>hg-01.jpg</imagen>
+  </libro>
+  <libro stock="10">
+    <nombre>Los Juegos del Hambre: En Llamas</nombre>
+    <autor>Suzanne Collins</autor>
+    <isbn>9789876094436</isbn>
+    <genero>Ciencia Ficcion</genero>
+    <editorial>Molino</editorial>
+    <fechaPublicacion>01/09/2009</fechaPublicacion>
+    <edicion>Primera Edición</edicion>
+    <valor>20000</valor>
+    <descripcion>
+      Contra todo pronóstico, Katniss ha ganado Los Juegos del Hambre. Es un milagro que ella y su compañero del Distrito 12, Peeta Mellark,
+      sigan vivos. Katniss debería sentirse aliviada, incluso contenta, ya que, al fin y al cabo, ha regresado con su familia y su amigo de toda 
+      la vida, Gale. Sin embargo, nada es como a ella le gustaría. Gale guarda las distancias y Peeta le ha dado la espalda por completo. Además 
+      se rumorea que existe una rebelión contra el Capitolio.
+    </descripcion>
+    <paginas>416</paginas>
+    <imagen>hg-02.jpg</imagen>
+  </libro>
+  <libro stock="10">
+    <nombre>Los Juegos del Hambre: Sinsajo</nombre>
+    <autor>Suzanne Collins</autor>
+    <isbn>9788492955312</isbn>
+    <genero>Ciencia Ficcion</genero>
+    <editorial>Molino</editorial>
+    <fechaPublicacion>24/08/2010</fechaPublicacion>
+    <edicion>Primera Edición</edicion>
+    <valor>20000</valor>
+    <descripcion>
+      Contra todo pronóstico, Katniss ha ganado Los Juegos del Hambre. Es un milagro que ella y su compañero del Distrito 12, Peeta Mellark,
+      sigan vivos. Katniss debería sentirse aliviada, incluso contenta, ya que, al fin y al cabo, ha regresado con su familia y su amigo de toda
+      la vida, Gale. Sin embargo, nada es como a ella le gustaría. Gale guarda las distancias y Peeta le ha dado la espalda por completo. Además
+      se rumorea que existe una rebelión contra el Capitolio.
+    </descripcion>
+    <paginas>430</paginas>
+    <imagen>hg-03.jpg</imagen>
   </libro>
 </libreria>

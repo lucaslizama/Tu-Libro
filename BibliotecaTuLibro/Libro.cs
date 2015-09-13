@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Globalization;
 
 namespace BibliotecaTuLibro
 {
@@ -159,7 +160,7 @@ namespace BibliotecaTuLibro
             sb.AppendLine(string.Format("ISBN : {0}<br />", _isbn));
             sb.AppendLine(string.Format("Autor : {0}<br />", _autor));
             sb.AppendLine(string.Format("Editorial : {0}<br />", _edicion));
-            sb.AppendLine(string.Format("Valor : {0}<br />", _valor));
+            sb.AppendLine(string.Format("Valor : {0} pesos<br />", _valor.ToString("C",CultureInfo.CreateSpecificCulture("es-CL"))));
             sb.AppendLine(string.Format("Genero : {0}", _genero));
 
             return sb.ToString();

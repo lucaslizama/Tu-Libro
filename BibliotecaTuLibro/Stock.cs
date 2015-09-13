@@ -70,7 +70,7 @@ namespace BibliotecaTuLibro
 
         /// <summary>
         /// Metodo que crea un libro en base a un
-        /// nodo Xml pasado pro parametro.
+        /// nodo Xml pasado por parametro.
         /// </summary>
         /// <param name="node">"El nodo Xml usado para obtener los datos" </param>
         /// <returns></returns>
@@ -86,8 +86,8 @@ namespace BibliotecaTuLibro
             String descripcion = node.ChildNodes[8].InnerText;
             String fecha = node.ChildNodes[5].InnerText;
             DateTime fechaPublicacion = new DateTime(int.Parse(fecha.Substring(6, 2)),
-                                        int.Parse(fecha.Substring(3, 2)),
-                                        int.Parse(fecha.Substring(0, 2)));
+                                        int.Parse(fecha.Substring(3, 2).Trim("0".ToCharArray())),
+                                        int.Parse(fecha.Substring(0, 2).Trim("0".ToCharArray())));
             int paginas = int.Parse(node.ChildNodes[9].InnerText);
             string imagen = node.ChildNodes[10].InnerText;
             Libro libro = new Libro(nombre, valor, descripcion, edicion, genero,
@@ -118,7 +118,7 @@ namespace BibliotecaTuLibro
         /// <param name="libro">El libro</param>
         /// <param name="libros">La lista</param>
         /// <returns></returns>
-        private static bool ExisteLibro(Libro libro, List<Libro> libros)
+        public static bool ExisteLibro(Libro libro, List<Libro> libros)
         {
             foreach (Libro l in libros)
             {
@@ -145,12 +145,37 @@ namespace BibliotecaTuLibro
             return contador;
         }
 
+        /// <summary>
+        /// Metodo que recupera un libro de una lista de libros
+        /// que posea el isbn suministrado por parametro.
+        /// </summary>
+        /// <param name="isbn">El isbn del libro a buscar.</param>
+        /// <param name="libros">La lista de libros donde buscar.</param>
+        /// <returns></returns>
         public static Libro BuscarPorIsbn(string isbn, List<Libro> libros)
         {
             foreach (Libro l in libros)
             {
                 if (l.Isbn.Equals(isbn))
                     return l;
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Metodo que 
+        /// </summary>
+        /// <param name="libros"></param>
+        /// <returns></returns>
+        public static Libro libroAleatorio(List<Libro> libros)
+        {
+            Random r = new Random();
+            int contador = r.Next(0, libros.Count);
+            foreach (Libro l in libros)
+            {
+                if (contador == 0)
+                    return l;
+                contador--;
             }
             return null;
         }

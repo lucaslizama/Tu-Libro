@@ -25,10 +25,21 @@ namespace TuLibroWeb
 
         private void InicializarLibrosRecomendados()
         {
-            Libro rec1 = Stock.BuscarPorIsbn("9788478887590", _libros);
-            Libro rec2 = Stock.BuscarPorIsbn("8478884955", _libros);
-            Libro rec3 = Stock.BuscarPorIsbn("8478889922", _libros);
-            Libro rec4 = Stock.BuscarPorIsbn("9788498384499", _libros);
+            List<Libro> librosRecomendados = new List<Libro>();
+            Libro auxLibro = new Libro();
+
+            for (int i = 0; i < 4; i++)
+            {
+                do{
+                    auxLibro = Stock.libroAleatorio(_libros);
+                }while(Stock.ExisteLibro(auxLibro,librosRecomendados));
+                librosRecomendados.Add(auxLibro);
+            }
+
+            Libro rec1 = librosRecomendados[0];
+            Libro rec2 = librosRecomendados[1];
+            Libro rec3 = librosRecomendados[2];
+            Libro rec4 = librosRecomendados[3];
 
             imgLibroRec1.Attributes["src"] = "recursos/imagenes/book-thumbnails/" + rec1.NombreImagen;
             infoLibroRec1.InnerHtml = rec1.MostrarDatos();
