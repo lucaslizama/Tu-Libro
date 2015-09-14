@@ -28,11 +28,14 @@ namespace TuLibroWeb
             string nombre = txtNombre.Text;
             string apellido = txtApellido.Text;
             string user = txtUser.Text;
-            int edad = int.Parse(txtEdad.Text);
+            string fecha = txtFechaNacimiento.Text;
+            DateTime fechaNacimiento = new DateTime(int.Parse(fecha.Substring(6,4)),
+                                                    int.Parse(fecha.Substring(3,2).Trim("0".ToCharArray())),
+                                                    int.Parse(fecha.Substring(0,2).Trim("0".ToCharArray())));
             string correo = txtCorreoUsuario.Text;
             string pass = txtPassword.Text;
 
-            Usuario usuario = new Usuario(nombre, apellido, DateTime.Now, correo, user, pass);
+            Usuario usuario = new Usuario(nombre, apellido, fechaNacimiento, correo, user, pass);
 
             if(!existeUsuario(usuario))
             {
@@ -43,7 +46,7 @@ namespace TuLibroWeb
                 Session["stock"] = _stock;
                 Session["libros"] = _libros;
                 Session["carrito"] = _carrito;
-                Server.Transfer(url);
+                Response.Redirect(url);
             }
         }
 

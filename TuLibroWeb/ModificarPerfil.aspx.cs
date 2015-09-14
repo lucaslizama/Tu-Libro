@@ -17,14 +17,14 @@ namespace TuLibroWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["objUsuario"] != null)
+            if (Session["UsuarioLoggeado"] != null)
             {
-                Usuario usu = (Usuario)Session["objUsuario"];
+                Usuario usuario = Session["UsuarioLoggeado"] as Usuario;
 
-                lblNombre.Text = lblNombre.Text + usu.Nombre;
-                lblApellido.Text = lblApellido.Text + usu.Apellido;
-                lblCorreo.Text = lblCorreo.Text + usu.Correo;
-                lblUser.Text = lblUser.Text + usu.User;
+                lblNombre.Text = lblNombre.Text + usuario.Nombre;
+                lblApellido.Text = lblApellido.Text + usuario.Apellido;
+                lblCorreo.Text = lblCorreo.Text + usuario.Correo;
+                lblUser.Text = lblUser.Text + usuario.User;
                 txtNombre.Visible = false;
                 txtApellido.Visible = false;
                 txtCorreo.Visible = false;

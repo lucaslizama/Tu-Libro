@@ -32,16 +32,18 @@ namespace TuLibroWeb
             Session["stock"] = _stock;
             Session["libros"] = _libros;
             Session["carrito"] = _carrito;
-            Server.Transfer("InicioDeSession.aspx");
+            Response.Redirect("InicioDeSession.aspx");
         }
 
         private void UsuarioLoggeado()
         {
             if (Session["UsuarioLoggeado"] != null)
             {
+                Usuario auxiliar = Session["UsuarioLoggeado"] as Usuario;
                 btnCerrarSesion.Visible = true;
                 btnInicioSesion.Visible = false;
                 lblBienvenida.Visible = true;
+                lblBienvenida.Text = "Bienvenido " + auxiliar.User;
             }
             else
             {
@@ -93,6 +95,26 @@ namespace TuLibroWeb
             else
             {
                 _carrito = Session["carrito"] as CarritoCompra;
+            }
+        }
+
+        protected void btnSuCuenta_Click(object sender, EventArgs e)
+        {
+            if (Session["UsuarioLoggeado"] == null)
+            {
+                Session["usuarios"] = _usuarios;
+                Session["stock"] = _stock;
+                Session["libros"] = _libros;
+                Session["carrito"] = _carrito;
+                Response.Redirect("InicioDeSession.aspx");
+            }
+            else
+            {
+                Session["usuarios"] = _usuarios;
+                Session["stock"] = _stock;
+                Session["libros"] = _libros;
+                Session["carrito"] = _carrito;
+                Response.Redirect("Perfil.aspx");
             }
         }
     }

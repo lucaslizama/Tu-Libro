@@ -128,7 +128,7 @@ namespace BibliotecaTuLibro
 
             sb.AppendLine(string.Format("Nombre : {0}", nombre));
             sb.AppendLine(string.Format("Apellido : {0}", apellido));
-            sb.AppendLine(string.Format("Edad : {0}", DateTime.Now.Year - fechaNacimiento.Year));
+            sb.AppendLine(string.Format("Edad : {0}", CalcularEdad(fechaNacimiento)));
             sb.AppendLine(string.Format("Correo Electronico : {0}", correo));
             sb.AppendLine(string.Format("Usuario : {0}", user));
 
@@ -153,6 +153,27 @@ namespace BibliotecaTuLibro
             correo = string.Empty;
             password = string.Empty;
             user = string.Empty;
+        }
+
+        private int CalcularEdad(DateTime fechaNacimiento)
+        {
+            int edad = DateTime.Now.Year - fechaNacimiento.Year;
+
+            if (DateTime.Now.Month < fechaNacimiento.Month)
+            {
+                edad--;
+                return edad;
+            }
+            else
+            {
+                if (DateTime.Now.Day < fechaNacimiento.Day)
+                {
+                    edad--;
+                    return edad;
+                }
+            }
+                
+            return edad;
         }
         #endregion
 

@@ -45,16 +45,18 @@
                         ControlToValidate="txtUser" ID="rfvUser"/>
                     </asp:TableCell></asp:TableRow><asp:TableRow>
                     <asp:TableCell>
-                        <asp:Label ID="lblEdad" Text="Edad" runat="server" />
+                        <asp:Label ID="lblEdad" Text="Fecha de Nacimiento" runat="server" />
                     </asp:TableCell><asp:TableCell>
-                        <asp:TextBox ID="txtEdad" runat="server" />
+                        <asp:TextBox ID="txtFechaNacimiento" runat="server"></asp:TextBox>
                     </asp:TableCell><asp:TableCell>
-                        <asp:RequiredFieldValidator ID="rfvEdad" runat="server" ForeColor="Red"
-                        ErrorMessage=" * Ingrese una Edad en el campo "
-                        ControlToValidate="txtEdad" Display="Dynamic" />
-                        <asp:RangeValidator runat="server" ID="rvEdad" ControlToValidate="txtEdad"
-                        ForeColor="Red" MaximumValue="110" MinimumValue="18" Type="Integer"
-                        Display="Dynamic" ErrorMessage=" * Ingrese una Edad mayor a 17 y menor a 111 años " />
+                        <asp:RequiredFieldValidator ID="rfvFechaNacimiento" runat="server" ForeColor="Red"
+                        ErrorMessage=" * Ingrese una fecha de Nacimiento "
+                        ControlToValidate="txtFechaNacimiento" Display="Dynamic" />
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+                        ErrorMessage="* ingrese una fecha en el formato dd/mm/yyyy" ForeColor="Red"
+                        ValidationExpression="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$"
+                        ControlToValidate="txtFechaNacimiento"/>
+
                     </asp:TableCell></asp:TableRow><asp:TableRow>
                     <asp:TableCell>
                         <asp:Label ID="lblCorreoUsuario" Text="Correo" runat="server" />

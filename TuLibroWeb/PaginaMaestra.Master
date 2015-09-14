@@ -14,10 +14,11 @@
         <div id="header">
             <img id="banner" src="recursos/imagenes/banner_transparente.png" alt="Banner de la pagina"/>
             <span id ="botonesBanner">
-                <asp:Label ID="lblBienvenida" class="header-label" runat="server" Text="Bienvenido Lucas" />
+                <asp:Label ID="lblBienvenida" class="header-label" runat="server" Text="" />
                 <asp:Button ID="btnInicioSesion" class="bannerButton" runat="server" 
                 Text="Iniciar Sesión" onclick="btnInicioSesion_Click" />
-                <asp:Button ID="btnSuCuenta" class="bannerButton" runat="server" Text="Su Cuenta" />
+                <asp:Button ID="btnSuCuenta" class="bannerButton" runat="server" 
+                Text="Su Cuenta" onclick="btnSuCuenta_Click" />
                 <asp:Button ID="btnCarrito" class="bannerButton" runat="server" Text="Carrito"/>
                 <asp:Button ID="btnCerrarSesion" runat="server" class="bannerButton" Text="CerrarSesion" />
             </span>
