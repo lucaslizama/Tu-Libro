@@ -23,10 +23,8 @@
             </span>
         </div>
         <div>
-            <span>
-                <asp:SiteMapPath ID="SiteMapPath1" runat="server">
-                </asp:SiteMapPath>
-            </span>
+            <asp:SiteMapPath ID="SiteMapPath1" class="sitemap" runat="server">
+            </asp:SiteMapPath>
         </div>
         <div id="cuerpo">
             <div id="barraIzquierda" >                
