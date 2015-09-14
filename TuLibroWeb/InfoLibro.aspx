@@ -4,6 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="contenidoBarraIzquierda" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="contenidoCentro" runat="server">
+     <div>
+                
+     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="contenidoBarraDerecha" runat="server">
 </asp:Content>

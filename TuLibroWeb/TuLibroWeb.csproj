@@ -51,13 +51,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CarritoDeCompras.aspx" />
+    <Content Include="InfoLibro.aspx" />
     <Content Include="Inicio.aspx" />
     <Content Include="InicioDeSession.aspx" />
     <Content Include="libros.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="MiPerfil.aspx" />
+    <Content Include="ModificarPerfil.aspx" />
+    <Content Include="Perfil.aspx" />
     <Content Include="recursos\css\estilo.css" />
     <Content Include="recursos\imagenes\banner.png" />
     <Content Include="recursos\imagenes\banner_transparente.png" />
@@ -87,6 +90,20 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarritoDeCompras.aspx.cs">
+      <DependentUpon>CarritoDeCompras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarritoDeCompras.aspx.designer.cs">
+      <DependentUpon>CarritoDeCompras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InfoLibro.aspx.cs">
+      <DependentUpon>InfoLibro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InfoLibro.aspx.designer.cs">
+      <DependentUpon>InfoLibro.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -101,12 +118,12 @@
     <Compile Include="InicioDeSession.aspx.designer.cs">
       <DependentUpon>InicioDeSession.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MiPerfil.aspx.cs">
-      <DependentUpon>MiPerfil.aspx</DependentUpon>
+    <Compile Include="ModificarPerfil.aspx.cs">
+      <DependentUpon>ModificarPerfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MiPerfil.aspx.designer.cs">
-      <DependentUpon>MiPerfil.aspx</DependentUpon>
+    <Compile Include="ModificarPerfil.aspx.designer.cs">
+      <DependentUpon>ModificarPerfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaMaestra.Master.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
@@ -114,6 +131,13 @@
     </Compile>
     <Compile Include="PaginaMaestra.Master.designer.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registro.aspx.cs">

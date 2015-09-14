@@ -3,8 +3,10 @@
   <siteMapNode url="Inicio.aspx" title="PaginaPrincipal"  description="Primer">
     <siteMapNode url="InicioDeSession.aspx" title="Inicio de Sesion"  description="" >
       <siteMapNode url="Registro.aspx" title="Pagina de Registro"  description="" />
-      <siteMapNode url="MiPerfil.aspx" title="Pagina de Perfil"  description="" />
+      <siteMapNode url="Perfil.aspx" title="Pagina de Perfil"  description="" />
+      <siteMapNode url="ModificarPerfil.aspx" title="Pagina de Perfil"  description="" />
     </siteMapNode>
-    <siteMapNode url="CarritoCompra.aspx" title="Carro de Compras" description=""/>
+    <siteMapNode url="CarritoDeCompra.aspx" title="Carro de Compras" description=""/>
+    <siteMapNode url="InfoLibro.aspx" title="Carro de Compras" description=""/>
   </siteMapNode>
 </siteMap>

@@ -22,8 +22,14 @@
                 <asp:Button ID="btnCerrarSesion" runat="server" class="bannerButton" Text="CerrarSesion" />
             </span>
         </div>
+        <div>
+            <span>
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                </asp:SiteMapPath>
+            </span>
+        </div>
         <div id="cuerpo">
-            <div id="barraIzquierda" >
+            <div id="barraIzquierda" >                
                 <asp:ContentPlaceHolder ID="contenidoBarraIzquierda" runat="server">
                     <p>Esta es la barra Izquierda, no la usaremos
                        por ahora, pero queda el espacio vacio para
