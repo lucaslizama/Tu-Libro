@@ -185,5 +185,53 @@
     margin : auto auto auto 110px;
 }
 
+#contenidoVistaLibro 
+{
+    overflow : auto;
+    width : 690px;
+    height : 100%;
+    margin : 0 auto 0 auto;
+    padding : 5px;
+    border-style : dotted;
+    border-width : thin;
+}
+
+.thumbnailVistaLibro 
+{
+    width: 70px;
+    height : 104px;
+    float : left;
+    margin : 10px;
+    background-image :"~/recursos/imagenes/agregar.png";
+}
+
+.infoVistaLibro
+{
+    width : 500px;
+    float : left;
+    margin : 10px 0 0 0;
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
+}
+
+.descVistaLibro 
+{
+    width : 500px;
+    float : left;
+    margin : 10px 0 0 0;
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
+}
+
+.btnVistaLibro
+{
+    float : left;
+    width : 90px;
+    margin : 10px 0 0 5px;
+    font-family : Times New Roman Serif Sans-Serif Arial;
+    font-size : 12px;
+}
 
 
