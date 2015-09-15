@@ -10,9 +10,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        
         <div id="header">
-            <img id="banner" src="recursos/imagenes/banner_transparente.png" alt="Banner de la pagina"/>
+            <a href="Inicio.aspx"><img id="banner" src="recursos/imagenes/banner_transparente.png" alt="Banner de la pagina"/></a>
             <span id ="botonesBanner">
                 <asp:Label ID="lblBienvenida" class="header-label" runat="server" Text="" />
                 <asp:Button ID="btnInicioSesion" class="bannerButton" runat="server" 

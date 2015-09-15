@@ -185,15 +185,24 @@
     margin : auto auto auto 110px;
 }
 
+#fichaProducto 
+{
+    margin : auto;
+    position : relative;
+    right : 20px;
+    border-radius : 10px;
+}
+
 #contenidoVistaLibro 
 {
     overflow : auto;
     width : 690px;
     height : 100%;
-    margin : 0 auto 0 auto;
+    margin : 0 auto 0 0;
     padding : 5px;
-    border-style : dotted;
+    border-style : solid;
     border-width : thin;
+    border-radius : 10px;
 }
 
 .thumbnailVistaLibro 
@@ -219,7 +228,7 @@
 {
     width : 500px;
     float : left;
-    margin : 10px 0 0 0;
+    margin : 10px 0 0 90px;
     border-style :solid;
     border-width :1px;
     border-color : Black;
@@ -232,6 +241,10 @@
     margin : 10px 0 0 5px;
     font-family : Times New Roman Serif Sans-Serif Arial;
     font-size : 12px;
+    border-radius : 20px;
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
 }
 
 

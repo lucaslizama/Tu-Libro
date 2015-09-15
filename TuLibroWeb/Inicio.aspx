@@ -19,22 +19,22 @@
         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" Width="100px" class="search-button"/>
         <div id="librosRecomendados">
             <div class="libro-recomendado">
-                <img id="imgLibroRec1" class="thumbnail" runat="server" src="" alt="Libro Recomendado 1"/>
+                <a id="linkLibroRec1" runat="server"><img id="imgLibroRec1" class="thumbnail" runat="server" src="" alt="Libro Recomendado 1"/></a>
                 <p id="infoLibroRec1" class="info-libro" runat="server"></p>
                 <p id="desclibrorec1" class="desc-libro" runat="server"></p>
             </div>
             <div class="libro-recomendado">
-                <img id="imgLibroRec2" class="thumbnail" runat="server" src="" alt="Libro Recomendado 2"/>
+                <a id="linkLibroRec2" runat="server"><img id="imgLibroRec2" class="thumbnail" runat="server" src="" alt="Libro Recomendado 2"/></a>
                 <p id="infoLibroRec2" class="info-libro" runat="server"></p>
                 <p id="desclibrorec2" class="desc-libro" runat="server"></p>
             </div>
             <div class="libro-recomendado">
-                <img id="imgLibroRec3" class="thumbnail" runat="server" src="" alt="Libro Recomendado 3"/>
+                <a id="linkLibroRec3" runat="server"><img id="imgLibroRec3" class="thumbnail" runat="server" src="" alt="Libro Recomendado 3"/></a>
                 <p id="infoLibroRec3" class="info-libro" runat="server" ></p>
                 <p id="desclibrorec3" class="desc-libro" runat="server"></p>
             </div>
             <div class="libro-recomendado">
-                <img id="imgLibroRec4" class="thumbnail" runat="server" src="" alt="Libro Recomendado 4"/>
+                <a id="linkLibroRec4" runat="server"><img id="imgLibroRec4" class="thumbnail" runat="server" src="" alt="Libro Recomendado 4"/></a>
                 <p id="infoLibroRec4" class="info-libro" runat="server"></p>
                 <p id="desclibrorec4" class="desc-libro" runat="server"></p>
             </div>

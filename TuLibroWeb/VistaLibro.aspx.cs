@@ -22,7 +22,13 @@ namespace TuLibroWeb
             InicializarStock();
             InicializarCarrito();
 
-
+            if (Request.Params["isbn"] != null)
+            {
+                Libro auxiliar = Stock.BuscarPorIsbn(Request.Params["isbn"], _libros);
+                thumbnailVistaLibro.Src = "recursos/imagenes/book-thumbnails/" + auxiliar.NombreImagen;
+                infoVistaLibro.InnerHtml = auxiliar.MostrarDatos();
+                descVistaLibro.InnerText = auxiliar.Descripcion;
+            }
         }
 
         private void InicializarUsuarios()
