@@ -126,11 +126,11 @@ namespace BibliotecaTuLibro
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine(string.Format("Nombre : {0}", nombre));
-            sb.AppendLine(string.Format("Apellido : {0}", apellido));
-            sb.AppendLine(string.Format("Edad : {0}", CalcularEdad(fechaNacimiento)));
-            sb.AppendLine(string.Format("Correo Electronico : {0}", correo));
-            sb.AppendLine(string.Format("Usuario : {0}", user));
+            sb.AppendLine(string.Format("Nombre : {0} <br> ", nombre));
+            sb.AppendLine(string.Format("Apellido : {0} <br> ", apellido));
+            sb.AppendLine(string.Format("Edad : {0} <br> ", CalcularEdad(fechaNacimiento)));
+            sb.AppendLine(string.Format("Correo Electronico : {0} <br> ", correo));
+            sb.AppendLine(string.Format("Usuario : {0} <br> ", user));
 
             string passMostrar = "";
 
@@ -138,7 +138,7 @@ namespace BibliotecaTuLibro
             {
                 passMostrar = passMostrar + "*";
             }
-            sb.AppendLine(string.Format("Pass : {0}", passMostrar));
+            sb.AppendLine(string.Format("Pass : {0}<br>", passMostrar));
 
             return sb.ToString();
         }

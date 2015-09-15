@@ -63,6 +63,7 @@
     <Content Include="Perfil.aspx" />
     <Content Include="recursos\css\estilo.css" />
     <Content Include="recursos\imagenes\agregar.png" />
+    <Content Include="recursos\imagenes\avatar-default.png" />
     <Content Include="recursos\imagenes\banner.png" />
     <Content Include="recursos\imagenes\banner_transparente.png" />
     <Content Include="recursos\imagenes\book-thumbnails\hg-01.jpg" />

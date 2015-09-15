@@ -25,7 +25,7 @@ namespace TuLibroWeb
             if (Session["UsuarioLoggeado"] != null)
             {
                 Usuario usuario = Session["UsuarioLoggeado"] as Usuario;
-                txtInfo.Text = usuario.MostrarDatos();
+                txtPerfil.InnerHtml = usuario.MostrarDatos();
             }
             else
             {

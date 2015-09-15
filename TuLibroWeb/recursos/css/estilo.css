@@ -185,24 +185,15 @@
     margin : auto auto auto 110px;
 }
 
-#fichaProducto 
-{
-    margin : auto;
-    position : relative;
-    right : 20px;
-    border-radius : 10px;
-}
-
 #contenidoVistaLibro 
 {
     overflow : auto;
     width : 690px;
     height : 100%;
-    margin : 0 auto 0 0;
+    margin : 0 auto 0 auto;
     padding : 5px;
-    border-style : solid;
+    border-style : dotted;
     border-width : thin;
-    border-radius : 10px;
 }
 
 .thumbnailVistaLibro 
@@ -211,40 +202,44 @@
     height : 104px;
     float : left;
     margin : 10px;
-    background-image :"~/recursos/imagenes/agregar.png";
 }
 
 .infoVistaLibro
 {
-    width : 500px;
+    width : 100px;
     float : left;
-    margin : 10px 0 0 0;
-    border-style :solid;
-    border-width :1px;
-    border-color : Black;
+    background-color : Red;
 }
 
 .descVistaLibro 
 {
-    width : 500px;
+    width : 400px;
     float : left;
-    margin : 10px 0 0 90px;
+    overflow : auto;
     border-style :solid;
     border-width :1px;
     border-color : Black;
 }
 
-.btnVistaLibro
+#contenedorPerfil
+{
+    overflow : auto;
+    width : 690px;
+    border-radius = 20px;
+}
+
+.txtInfoPerfil 
+{
+    width : 220px;
+    padding : 10px;
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
+}
+
+.btnModificarPerfil
 {
     float : left;
-    width : 90px;
-    margin : 10px 0 0 5px;
-    font-family : Times New Roman Serif Sans-Serif Arial;
-    font-size : 12px;
     border-radius : 20px;
-    border-style :solid;
-    border-width :1px;
-    border-color : Black;
 }
-
 
