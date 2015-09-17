@@ -49,6 +49,15 @@ namespace TuLibroWeb {
         protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
+        /// librosRecomendados control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl librosRecomendados;
+        
+        /// <summary>
         /// linkLibroRec1 control.
         /// </summary>
         /// <remarks>
@@ -191,5 +200,14 @@ namespace TuLibroWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl desclibrorec4;
+        
+        /// <summary>
+        /// resultadosBusqueda control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl resultadosBusqueda;
     }
 }

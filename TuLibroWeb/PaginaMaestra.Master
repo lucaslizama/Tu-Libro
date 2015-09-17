@@ -22,11 +22,11 @@
                 <asp:Button ID="btnCerrarSesion" runat="server" class="bannerButton" Text="CerrarSesion" />
             </span>
         </div>
-        <div>
-            <asp:SiteMapPath ID="SiteMapPath1" class="sitemap" runat="server">
-            </asp:SiteMapPath>
-        </div>
         <div id="cuerpo">
+            <div class="sitemap">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                </asp:SiteMapPath>
+            </div>
             <div id="barraIzquierda" >                
                 <asp:ContentPlaceHolder ID="contenidoBarraIzquierda" runat="server">
                     <p>Esta es la barra Izquierda, no la usaremos

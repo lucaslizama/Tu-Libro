@@ -78,7 +78,7 @@
     border-radius : 10px;
 }
 
-#librosRecomendados
+.librosRecomendados
 {
     width : 690px;
     height : 100%;
@@ -182,7 +182,15 @@
 
 .sitemap
 {
-    margin : auto auto auto 110px;
+    margin : 0 0 0 10px;
+}
+
+#fichaProducto
+{
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
+    border-radius : 10px;
 }
 
 #contenidoVistaLibro 
@@ -194,6 +202,7 @@
     padding : 5px;
     border-style : dotted;
     border-width : thin;
+    border-radius : 10px;
 }
 
 .thumbnailVistaLibro 
@@ -206,26 +215,42 @@
 
 .infoVistaLibro
 {
-    width : 100px;
+    width : 500px;
     float : left;
-    background-color : Red;
+    margin : 10px 0 0 5px;
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
+    font-size : 13px;
+}
+
+.btnVistaLibro 
+{
+    float : left;
+    margin : 10px 0px 0px 2px;
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
+    border-radius : 20px;
 }
 
 .descVistaLibro 
 {
-    width : 400px;
+    width : auto;
     float : left;
+    margin : 0 10px 5px 10px;
     overflow : auto;
     border-style :solid;
     border-width :1px;
     border-color : Black;
+    font-size : 14px;
 }
 
 #contenedorPerfil
 {
     overflow : auto;
     width : 690px;
-    border-radius = 20px;
+    border-radius : 20px;
 }
 
 .txtInfoPerfil 
@@ -242,4 +267,54 @@
     float : left;
     border-radius : 20px;
 }
+
+.contenedorLibroEncontrado
+{
+    padding : 10px;
+    width : 600px;
+    margin :10px auto 0px auto;
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
+    border-radius : 10px;
+    overflow : auto;
+}
+
+.thumbnailLibroEncontrado
+{
+    width : 70px;
+    height : 140px;
+    float : left;
+    margin : 5px;
+}
+
+.infoLibroEncontrado 
+{
+    width : 500px;
+    height : 130px;
+    float : left;
+    margin : 5px auto 0px 5px;
+    padding : 10px 0px 0px 10px;
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
+    border-radius : 10px;
+    font-family : Times New Roman Serif Sans-Serif Arial;
+    font-size : 13px;
+}
+
+.descLibroEncontrado
+{
+    width : 590px;
+    float : left;
+    padding : 5px;
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
+    border-radius : 10px;
+    font-family : Times New Roman Serif Sans-Serif Arial;
+    font-size : 13px;
+}
+
+
 

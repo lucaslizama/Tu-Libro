@@ -29,6 +29,7 @@ namespace TuLibroWeb
         {
             List<Libro> librosRecomendados = new List<Libro>();
             Libro auxLibro = new Libro();
+            resultadosBusqueda.Visible = false;
 
             for (int i = 0; i < 4; i++)
             {
@@ -104,6 +105,28 @@ namespace TuLibroWeb
             else
             {
                 _carrito = Session["carrito"] as CarritoCompra;
+            }
+        }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            List<Libro> resultados = new List<Libro>();
+            switch (ddlBuscador.SelectedIndex)
+            {
+                case 0:
+                    resultados = BuscadorLibros.BuscarPorPalabraClave(txtBuscador.Text, _libros);
+                    librosRecomendados.Visible = false;
+                    resultadosBusqueda.Visible = true;
+                    resultadosBusqueda.InnerHtml = BuscadorLibros.GenerarVista(resultados);
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
             }
         }
 

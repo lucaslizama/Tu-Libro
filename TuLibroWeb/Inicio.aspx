@@ -16,8 +16,9 @@
             <asp:ListItem>Editorial</asp:ListItem>
         </asp:DropDownList>
         <asp:TextBox ID="txtBuscador" runat="server" Width="350px"/>
-        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" Width="100px" class="search-button"/>
-        <div id="librosRecomendados">
+        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" Width="100px" 
+            class="search-button" onclick="btnBuscar_Click"/>
+        <div id="librosRecomendados" class="librosRecomendados" runat="server">
             <div class="libro-recomendado">
                 <a id="linkLibroRec1" runat="server"><img id="imgLibroRec1" class="thumbnail" runat="server" src="" alt="Libro Recomendado 1"/></a>
                 <p id="infoLibroRec1" class="info-libro" runat="server"></p>
@@ -38,6 +39,9 @@
                 <p id="infoLibroRec4" class="info-libro" runat="server"></p>
                 <p id="desclibrorec4" class="desc-libro" runat="server"></p>
             </div>
+        </div>
+        <div id="resultadosBusqueda" runat="server">
+            
         </div>
     </fieldset>
 </asp:Content>
