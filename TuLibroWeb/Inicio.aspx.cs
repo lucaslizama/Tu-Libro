@@ -115,20 +115,23 @@ namespace TuLibroWeb
             {
                 case 0:
                     resultados = BuscadorLibros.BuscarPorPalabraClave(txtBuscador.Text, _libros);
-                    librosRecomendados.Visible = false;
-                    resultadosBusqueda.Visible = true;
-                    resultadosBusqueda.InnerHtml = BuscadorLibros.GenerarVista(resultados);
                     break;
                 case 1:
+                    resultados = BuscadorLibros.BuscarPorTitulo(txtBuscador.Text, _libros);
                     break;
                 case 2:
+                    resultados = BuscadorLibros.BuscarPorAutor(txtBuscador.Text, _libros);
                     break;
                 case 3:
+                    resultados = BuscadorLibros.BuscarPorIsbn(txtBuscador.Text, _libros);
                     break;
                 case 4:
+                    resultados = BuscadorLibros.BuscarPorEditorial(txtBuscador.Text, _libros);
                     break;
             }
+            librosRecomendados.Visible = false;
+            resultadosBusqueda.Visible = true;
+            resultadosBusqueda.InnerHtml = BuscadorLibros.GenerarVista(resultados);
         }
-
     }
 }

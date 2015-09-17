@@ -28,7 +28,7 @@ namespace BibliotecaTuLibro
             List<Libro> librosEncontrados = new List<Libro>();
 
             var resultados = from n in libros
-                             where n.Nombre.Equals(titulo)
+                             where n.Nombre.ToLower().IndexOf(titulo.ToLower()) != -1
                              select n;
 
             foreach (Libro l in resultados)
@@ -44,7 +44,7 @@ namespace BibliotecaTuLibro
             List<Libro> librosEncontrados = new List<Libro>();
 
             var resultados = from n in libros
-                             where n.Autor.Equals(autor)
+                             where n.Autor.ToLower().IndexOf(autor.ToLower()) != -1
                              select n;
 
             foreach (Libro l in resultados)
@@ -60,7 +60,7 @@ namespace BibliotecaTuLibro
             List<Libro> librosEncontrados = new List<Libro>();
 
             var resultados = from n in libros
-                             where n.Editorial.Equals(editorial)
+                             where n.Editorial.ToLower().IndexOf(editorial.ToLower()) != -1
                              select n;
 
             foreach (Libro l in resultados)
@@ -110,23 +110,6 @@ namespace BibliotecaTuLibro
             return false;
         }
 
-        public static string GenerarVista(List<Libro> libros)
-        {
-            string vista = string.Empty;
-
-            if(libros.Count == 0)
-                return "<h2>No se encontraron libros</h2>";
-            else
-            {
-                foreach (Libro l in libros)
-                {
-		            vista += CrearTemplateLibro(l) + "<br>";
-                }
-            }
-
-            return vista;
-        }
-
         private static string CrearTemplateLibro(Libro libro)
         {
             StringBuilder sb = new StringBuilder();
@@ -136,6 +119,24 @@ namespace BibliotecaTuLibro
             sb.Append(string.Format("<p class='descLibroEncontrado'>{0}</p>",libro.Descripcion.Substring(0,270)));
             sb.Append("</div>");
             return sb.ToString();
+        }
+
+        public static string GenerarVista(List<Libro> libros)
+        {
+            string vista = string.Empty;
+
+            if (libros.Count == 0)
+                return "<h2>No se encontraron libros</h2>";
+            else
+            {
+                vista += string.Format("<br>Se encontraron {0} libros", libros.Count);
+                foreach (Libro l in libros)
+                {
+                    vista += CrearTemplateLibro(l) + "<br>";
+                }
+            }
+
+            return vista;
         }
     }
 }
