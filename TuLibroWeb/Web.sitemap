@@ -8,7 +8,7 @@
       <siteMapNode url="ModificarPerfil.aspx" title="Pagina de Perfil"  description="" />
     </siteMapNode>
     <siteMapNode url="CarritoDeCompra.aspx" title="Carro de Compras" description=""/>
-    <siteMapNode url="InfoLibro.aspx" title="Carro de Compras" description=""/>
+    <siteMapNode url="VistaLibro.aspx" title="Pagina de Perfil"  description="" >
+    </siteMapNode>
   </siteMapNode>
 </siteMap>
-

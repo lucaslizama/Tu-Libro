@@ -24,7 +24,14 @@ namespace TuLibroWeb
             InicializarUsuarios();
         }
 
-        
+        protected void btnCarrito_Click(object sender, EventArgs e)
+        {
+            Session["usuarios"] = _usuarios;
+            Session["stock"] = _stock;
+            Session["libros"] = _libros;
+            Session["carrito"] = _carrito;
+            Response.Redirect("CarritoDeCompras.aspx");
+        }
 
         protected void btnInicioSesion_Click(object sender, EventArgs e)
         {

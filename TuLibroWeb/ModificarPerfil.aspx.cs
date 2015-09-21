@@ -51,4 +51,3 @@ namespace TuLibroWeb
         }
     }
 }
-//string nombre, string apellido, DateTime fechaNacimiento, string correo, string user, string password

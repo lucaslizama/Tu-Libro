@@ -18,7 +18,7 @@
                 Text="Iniciar Sesión" onclick="btnInicioSesion_Click" />
                 <asp:Button ID="btnSuCuenta" class="bannerButton" runat="server" 
                 Text="Su Cuenta" onclick="btnSuCuenta_Click" />
-                <asp:Button ID="btnCarrito" class="bannerButton" runat="server" Text="Carrito"/>
+                <asp:Button ID="btnCarrito" class="bannerButton" runat="server" Text="Carrito" onclick="btnCarrito_Click"/>
                 <asp:Button ID="btnCerrarSesion" runat="server" class="bannerButton" Text="CerrarSesion" />
             </span>
         </div>
@@ -51,5 +51,38 @@
             </div>
         </div>
     </form>
+    <footer id="footer">
+        <section class="footersocial">
+            <div class="container">
+                <div class="row">
+                    <div class="span3 aboutus">
+                        <h2>Fraces de Motivación </h2>
+                        <p>
+                            “Yo hago lo que tú no puedes, y tú haces lo que yo no puedo. Juntos podemos hacer grandes cosas”
+                        </p>
+                    </div>
+                    <div class="span3 contact">
+                        <h2>Contáctenos </h2>
+                        <ul>
+                            <li class="mobile">+565 555555</li>
+                            <li class="email">Tu_Libro@Gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="footerlinks">
+            <div class="container">
+                <div class="info">
+                    <ul>
+                        <li><a href="#">Políticas de privacidad</a>
+                        </li>
+                        <li><a href="#">Términos &amp; Condiciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>       
+    </footer>
 </body>
 </html>
