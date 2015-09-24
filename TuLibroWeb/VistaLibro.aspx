@@ -9,7 +9,8 @@
         <div id="contenidoVistaLibro">
             <img id="thumbnailVistaLibro" class="thumbnailVistaLibro" src="~/recursos/imagenes/book-thumbnails/hg-02.jpg" alt="a" runat="server" />
             <p id="infoVistaLibro" class="infoVistaLibro" runat="server"></p>
-            <asp:ImageButton ID="ImageButton1" class="btnVistaLibro" runat="server" ImageUrl="recursos/imagenes/agregar.png" />
+            <asp:ImageButton ID="btnAgregarLibro" class="btnVistaLibro" runat="server" 
+                ImageUrl="recursos/imagenes/agregar.png" onclick="btnAgregarLibro_Click" />
             <p id="descVistaLibro" class="descVistaLibro" runat="server"></p>
         </div>
     </fieldset>

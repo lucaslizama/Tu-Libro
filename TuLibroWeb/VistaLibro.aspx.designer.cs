@@ -31,13 +31,13 @@ namespace TuLibroWeb {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl infoVistaLibro;
         
         /// <summary>
-        /// ImageButton1 control.
+        /// btnAgregarLibro control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+        protected global::System.Web.UI.WebControls.ImageButton btnAgregarLibro;
         
         /// <summary>
         /// descVistaLibro control.

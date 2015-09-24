@@ -316,5 +316,53 @@
     font-size : 13px;
 }
 
+.infoCarrito
+{
+    margin-left : 70px;
+}
+
+.cart-info
+{
+    display : block;
+    position : relative;
+    right : 50px;
+    width : 800px;
+    margin-left : auto;
+    margin-right : auto;
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
+    border-radius : 10px;
+}
+
+.totalCarrito
+{
+    margin-left : 570px;
+    border-style :solid;
+    border-width :1px;
+    border-color : Black;
+}
+
+.btnComprar
+{
+    margin-left : 640px;
+    margin-bottom : 10px;
+    border-radius : 10px;
+}
+
+.btnVaciar
+{
+    display : inline;
+    margin-left : 10px;
+    margin-bottom : 10px;
+    border-radius : 10px;
+}
+
+.errorLabel
+{
+    color : Red;
+}
+
+
 
 

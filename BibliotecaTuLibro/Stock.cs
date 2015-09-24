@@ -10,7 +10,7 @@ namespace BibliotecaTuLibro
     public class Stock
     {
         #region Campos
-        private List<Libro> _libros;
+        private static List<Libro> _libros;
         #endregion
 
         #region Propiedades
@@ -178,6 +178,11 @@ namespace BibliotecaTuLibro
                 contador--;
             }
             return null;
+        }
+
+        public static bool hayStock(Libro libro, int cantidad)
+        {
+            return Stock.Cantidad(libro, _libros) >= cantidad;
         }
         #endregion
     }

@@ -35,14 +35,13 @@ namespace BibliotecaTuLibro
         {
             StringBuilder sb = new StringBuilder();
             List<Libro> filtrados = FiltrarLibros();
-            int i = 1;
 
             foreach (Libro l in filtrados)
             {
-                sb.AppendLine(string.Format("{0}.- Nombre: {1}  Cantidad: {2}  Precio: ${3} <br />",
-                              i, l.Nombre, Stock.Cantidad(l,_productos), l.Valor));
-                i++;
+                sb.Append(string.Format("<li><label>Nombre: {0}</label>  <label class='infoCarrito'>Cantidad: {1}</label>  <label class='infoCarrito'>Precio: ${2}</label></li>",
+                              l.Nombre, Stock.Cantidad(l,_productos), l.Valor));
             }
+            sb.Append(string.Format("<label class='totalCarrito'>Total: ${0}</label>",totalCarrito()));
 
             return sb.ToString();
 
@@ -81,5 +80,26 @@ namespace BibliotecaTuLibro
             return false;
         }
 
+        private double totalCarrito()
+        {
+            double total = 0;
+            foreach (Libro l in _productos)
+            {
+                total += l.Valor;
+            }
+            return total;
+        }
+
+        public bool puedeComprar()
+        {
+            foreach (Libro l in Stock.ListarLibros(_productos))
+            {
+                if(!Stock.hayStock(l,Stock.Cantidad(l,_productos)))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }

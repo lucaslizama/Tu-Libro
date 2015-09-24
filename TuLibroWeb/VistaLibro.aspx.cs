@@ -21,7 +21,11 @@ namespace TuLibroWeb
             InicializarUsuarios();
             InicializarStock();
             InicializarCarrito();
+            InicializarPagina();
+        }
 
+        private void InicializarPagina()
+        {
             if (Request.Params["isbn"] != null)
             {
                 Libro auxiliar = Stock.BuscarPorIsbn(Request.Params["isbn"], _libros);
@@ -73,6 +77,17 @@ namespace TuLibroWeb
             else
             {
                 _carrito = Session["carrito"] as CarritoCompra;
+            }
+        }
+
+        protected void btnAgregarLibro_Click(object sender, ImageClickEventArgs e)
+        {
+            if (Request.Params["isbn"] != null)
+            {
+                Libro libro = Stock.BuscarPorIsbn(Request.Params["isbn"], _libros);
+                _carrito.Productos.Add(libro);
+                Session["carrito"] = _carrito;
+                Response.Redirect("CarritoDeCompras.aspx");
             }
         }
     }
