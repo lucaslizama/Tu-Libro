@@ -124,5 +124,11 @@ namespace TuLibroWeb
                 Response.Redirect("Perfil.aspx");
             }
         }
+
+        protected void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Session["UsuarioLoggeado"] = null;
+            Response.Redirect("Inicio.aspx");
+        }
     }
 }

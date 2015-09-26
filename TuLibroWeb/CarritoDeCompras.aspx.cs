@@ -97,7 +97,11 @@ namespace TuLibroWeb
 
         protected void btnComprar_Click(object sender, EventArgs e)
         {
-            if (_carrito.puedeComprar())
+            if (Session["UsuarioLoggeado"] == null)
+            {
+                Response.Redirect("InicioDeSession.aspx");
+            }
+            else if (_carrito.puedeComprar())
             {
                 foreach (Libro l in _carrito.Productos)
                 {

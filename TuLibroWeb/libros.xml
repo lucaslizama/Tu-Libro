@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <libreria>
-  <libro stock="10">
+  <libro stock="1">
     <nombre>Harry Potter Y La Piedra Filosofal</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>9788478887590</isbn>
@@ -28,7 +28,7 @@
 	  <paginas>256</paginas>
 	  <imagen>hp-01.jpg</imagen>
   </libro>
-  <libro stock="10">
+  <libro stock="1">
     <nombre>Harry Potter Y La Cámara Secreta</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>8478884955</isbn>
@@ -54,7 +54,7 @@
 	  <paginas>288</paginas>
 	  <imagen>hp-02.jpg</imagen>
   </libro>
-  <libro stock="10">
+  <libro stock="1">
     <nombre>Harry Potter Y El Prisionero De Azkaban</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>9788498384413</isbn>
@@ -79,7 +79,7 @@
 	  <paginas>360</paginas>
 	  <imagen>hp-03.jpg</imagen>
   </libro>
-  <libro stock="10">
+  <libro stock="1">
     <nombre>Harry Potter Y El Caliz De Fuego</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>9788498384437</isbn>
@@ -100,7 +100,7 @@
 	  <paginas>640</paginas>
 	  <imagen>hp-04.jpg</imagen>
   </libro>
-  <libro stock="10">
+  <libro stock="1">
     <nombre>Harry Potter Y La Orden Del Fénix</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>847888744X</isbn>
@@ -124,7 +124,7 @@
 	  <paginas>896</paginas>
 	  <imagen>hp-05.jpg</imagen>
   </libro>
-  <libro stock="10">
+  <libro stock="1">
     <nombre>Harry Potter Y El Misterio Del Principe</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>8478889922</isbn>
@@ -148,7 +148,7 @@
 	  <paginas>602</paginas>
 	  <imagen>hp-06.jpg</imagen>
   </libro>
-  <libro stock="10">
+  <libro stock="1">
     <nombre>Harry Potter Y Las Reliquias De La Muerte</nombre>
     <autor>Rowling, Joanne K</autor>
     <isbn>9788498384499</isbn>

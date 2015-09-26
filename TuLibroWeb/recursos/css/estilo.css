@@ -215,9 +215,9 @@
 
 .infoVistaLibro
 {
-    width : 500px;
+    width : 480px;
     float : left;
-    margin : 10px 0 0 5px;
+    margin : 10px 0 10px 5px;
     border-style :solid;
     border-width :1px;
     border-color : Black;

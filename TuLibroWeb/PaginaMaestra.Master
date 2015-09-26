@@ -19,7 +19,8 @@
                 <asp:Button ID="btnSuCuenta" class="bannerButton" runat="server" 
                 Text="Su Cuenta" onclick="btnSuCuenta_Click" />
                 <asp:Button ID="btnCarrito" class="bannerButton" runat="server" Text="Carrito" onclick="btnCarrito_Click"/>
-                <asp:Button ID="btnCerrarSesion" runat="server" class="bannerButton" Text="CerrarSesion" />
+                <asp:Button ID="btnCerrarSesion" runat="server" class="bannerButton" 
+                Text="CerrarSesion" onclick="btnCerrarSesion_Click" />
             </span>
         </div>
         <div id="cuerpo">
