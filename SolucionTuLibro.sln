@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuLibroWeb", "TuLibroWeb\TuLibroWeb.csproj", "{FB6B504A-374D-4749-A85B-095DE6DD020E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuLibro.Presentacion", "TuLibro.Presentacion\TuLibro.Presentacion.csproj", "{FB6B504A-374D-4749-A85B-095DE6DD020E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaTuLibro", "BibliotecaTuLibro\BibliotecaTuLibro.csproj", "{E76A82E4-22EC-4257-8C7D-3B87900B7A7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuLibro.Negocio", "TuLibro.Negocio\TuLibro.Negocio.csproj", "{E76A82E4-22EC-4257-8C7D-3B87900B7A7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuLibro.Dalc", "TuLibro.Dalc\TuLibro.Dalc.csproj", "{4666578A-F860-4C93-9296-F82435348EE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +21,10 @@ Global
 		{E76A82E4-22EC-4257-8C7D-3B87900B7A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E76A82E4-22EC-4257-8C7D-3B87900B7A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E76A82E4-22EC-4257-8C7D-3B87900B7A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4666578A-F860-4C93-9296-F82435348EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4666578A-F860-4C93-9296-F82435348EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4666578A-F860-4C93-9296-F82435348EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4666578A-F860-4C93-9296-F82435348EE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

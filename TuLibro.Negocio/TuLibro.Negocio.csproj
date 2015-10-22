@@ -8,8 +8,8 @@
     <ProjectGuid>{E76A82E4-22EC-4257-8C7D-3B87900B7A7C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BibliotecaTuLibro</RootNamespace>
-    <AssemblyName>BibliotecaTuLibro</AssemblyName>
+    <RootNamespace>TuLibro.Negocio</RootNamespace>
+    <AssemblyName>TuLibro.Negocio</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

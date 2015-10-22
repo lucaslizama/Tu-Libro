@@ -10,8 +10,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TuLibroWeb</RootNamespace>
-    <AssemblyName>TuLibroWeb</AssemblyName>
+    <RootNamespace>TuLibro.Presentacion</RootNamespace>
+    <AssemblyName>TuLibro.Presentacion</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
@@ -161,9 +161,9 @@
     <Content Include="PaginaMaestra.Master" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BibliotecaTuLibro\BibliotecaTuLibro.csproj">
+    <ProjectReference Include="..\BibliotecaTuLibro\TuLibro.Negocio.csproj">
       <Project>{E76A82E4-22EC-4257-8C7D-3B87900B7A7C}</Project>
-      <Name>BibliotecaTuLibro</Name>
+      <Name>TuLibro.Negocio</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
