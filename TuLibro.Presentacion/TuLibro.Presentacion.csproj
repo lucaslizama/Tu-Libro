@@ -161,7 +161,7 @@
     <Content Include="PaginaMaestra.Master" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BibliotecaTuLibro\TuLibro.Negocio.csproj">
+    <ProjectReference Include="..\TuLibro.Negocio\TuLibro.Negocio.csproj">
       <Project>{E76A82E4-22EC-4257-8C7D-3B87900B7A7C}</Project>
       <Name>TuLibro.Negocio</Name>
     </ProjectReference>
